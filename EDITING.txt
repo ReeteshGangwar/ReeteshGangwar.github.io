@@ -1,0 +1,36 @@
+ROUTINE WEBSITE UPDATES
+
+Use UPDATE-WEBSITE.md. It contains examples for news, publications, students,
+talks, projects, courses, awards, biography, and wording corrections.
+
+Once connected to GitHub Pages:
+1. Open UPDATE-WEBSITE.md on GitHub and click the pencil.
+2. Copy the appropriate example into Active updates.
+3. Change the example fence to update and fill in the details.
+4. Click Commit changes. GitHub validates, builds, and publishes automatically.
+5. If it fails, the previous website remains; see the Actions tab for the error.
+
+Keep active entries: they are your saved update records. Edit an existing entry
+to correct it. Type and fields route it to the right place without page coding.
+Use Announce: Yes with a Date to also create a homepage and News announcement.
+
+LOCAL FILES
+Saving only on the Mac does not upload changes. For local preview, save this
+file and run quarto preview from the Website folder. Push/commit to GitHub to
+update the hosted site once setup is complete.
+
+FOR MAINTAINERS
+Root .qmd pages are generated. For permanent base-content/layout changes, edit
+_content/base/*.qmd. Use styles.css for design and _quarto.yml for navigation.
+Do not edit generated _site/ HTML.
+
+MEDIA
+Keep original media outside Website. Upload optimized photos inside assets/.
+A Photo field must name the uploaded file, e.g. assets/media/student.webp.
+Preserve captions and alt text. Prefer small WebP photographs over originals.
+
+PDF CV
+The supplied PDF is a separate download. This website update process does not
+yet regenerate the PDF. Replace assets/Reetesh-Gangwar-CV.pdf when a new CV is ready.
+
+See README.md for setup, testing, and maintenance instructions.

@@ -1,0 +1,65 @@
+---
+title: ""
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div class="home-hero">
+<div>
+<p class="eyebrow">INDIAN INSTITUTE OF TECHNOLOGY TIRUPATI</p>
+<h1>Dr. Reetesh Kumar Gangwar</h1>
+<p class="position"><strong>Associate Professor</strong> · Department of Physics</p>
+<p class="lab-affiliation">Research group: <a href="https://www.ppliittp.com/">Plasma Processing Lab, IIT Tirupati ↗</a></p>
+<p class="leadership-line">Advisor, Outreach, IIT Tirupati <span>·</span> Former Head, Department of Physics</p>
+<div class="profile-links" aria-label="Academic profiles and contact links">
+<a class="primary-link" href="assets/Reetesh-Gangwar-CV.pdf">Download CV ↗</a>
+<a href="https://physics.iittp.ac.in/DrReetesh.html">Institute profile ↗</a>
+<a href="https://scholar.google.co.in/citations?user=r6HvPAsAAAAJ&hl=en">Google Scholar ↗</a>
+<a href="https://www.researchgate.net/profile/Reetesh-Gangwar-2">ResearchGate ↗</a>
+<a href="https://in.linkedin.com/in/plasma-processing-lab-1ab976378">LinkedIn · Lab ↗</a>
+<a href="https://www.ppliittp.com/">Plasma Processing Lab ↗</a>
+<a href="mailto:reetesh@iittp.ac.in">Email</a>
+<a href="tel:+918772503457">+91 87725 03457</a>
+</div>
+</div>
+<figure><img class="portrait" src="assets/media/reetesh-gangwar.webp" loading="eager" fetchpriority="high" decoding="async" alt="Dr. Reetesh Kumar Gangwar" width="285" height="328"><figcaption>Associate Professor of Physics · IIT Tirupati</figcaption></figure>
+</div>
+<section class="research-introduction" aria-label="Research overview"><h2>Research overview</h2><p>My research lies at the interface of atomic physics, low-temperature plasma science, and optical diagnostics, with a focus on building a quantitative understanding of non-equilibrium plasmas and translating that understanding into applications. Our group combines experiments and computation to study plasma sources, electron–atom collision processes, and population kinetics, and we develop collisional-radiative models that link the light emitted by a plasma to its underlying parameters. We have integrated machine learning with these models to enable fast, reliable optical diagnostics. We have recently begun investigating quantum algorithm-based frameworks for plasma physics problems, exploring how emerging quantum computing approaches can complement conventional methods. Alongside this fundamental work, we explore plasma-based technologies for environmental treatment, food safety, and agriculture, aiming to connect basic plasma physics with solutions to real-world problems.</p></section>
+<div class="academic-record" aria-label="Academic record, October 2026">
+<div><strong>50+</strong><span>Journal papers</span></div>
+<div><strong>9</strong><span>Research &amp; consultancy projects</span></div>
+<div><strong>₹3.58 crore</strong><span>Combined project funding (PI / Co-PI)</span></div>
+<div><strong>3 + 5</strong><span>Ph.D. scholars (graduated + ongoing)</span></div>
+</div>
+<p class="record-date">Academic record as of October 2026. Funding refers to total sanctioned amounts across projects in PI and Co-PI roles.</p>
+```
+
+```{=html}
+<section class="conference-feature" aria-labelledby="plasma-2025-title">
+<p class="eyebrow">CONFERENCE LEADERSHIP</p>
+<h2 id="plasma-2025-title">Convener, PLASMA 2025</h2>
+<p>Served as a convener of the <strong>40th PSSI National Symposium on Plasma Science &amp; Technology</strong>, hosted at IIT Tirupati, <strong>27–29 December 2025</strong>.</p>
+<div class="conference-links"><a class="primary-link" href="https://iittpplasma2025.vercel.app/">View conference archive ↗</a><a href="service.html#conference-organization">Leadership &amp; organization →</a></div>
+</section>
+```
+
+## News & Updates
+
+{{< include _latest-updates.qmd >}}
+
+[All news & highlights →](news.qmd){.news-archive-link}
+
+## Research interests
+
+```{=html}
+<div class="research-grid"><article><div class="interest-graphic"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M22 8v24h24V8M26 32c-8 15 22 18 12 34" fill="none" stroke="#8c2235" stroke-width="4"/><path d="M34 35c-10 10 10 12 0 22" fill="none" stroke="#9a65ac" stroke-width="6"/><path d="M8 70h55" stroke="#23384e" stroke-width="3"/></svg><span>Source → spectrum → diagnosis</span></div><h3>Plasma sources &amp; optical diagnostics</h3><p>From discharge design and measured emission to quantitative understanding of plasma behaviour.</p><a href="research.html#sources">Research approach & representative publication →</a></article><article><div class="interest-graphic"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M10 60h50M20 35h40M30 12h30M25 54V40m0 0-5 7m5-7 5 7" fill="none" stroke="#23384e" stroke-width="3"/><circle cx="12" cy="20" r="5" fill="#8c2235"/><path d="m18 21 12 9" stroke="#8c2235" stroke-width="3"/></svg><span>Collisions → atomic data → emission</span></div><h3>Atomic processes &amp; plasma kinetics</h3><p>Electron-impact cross sections and rate coefficients connect microscopic collisions with plasma emission.</p><a href="research.html#atomic">Research approach & representative publication →</a></article><article><div class="interest-graphic"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M14 20 36 12 59 28 36 55 14 20 36 34 59 28M14 53 36 34 36 12M14 53 36 55" fill="none" stroke="#9aadb9" stroke-width="2"/><g fill="#8c2235"><circle cx="14" cy="20" r="6"/><circle cx="14" cy="53" r="6"/><circle cx="36" cy="12" r="6"/><circle cx="36" cy="34" r="6"/><circle cx="36" cy="55" r="6"/><circle cx="59" cy="28" r="6"/></g></svg><span>Physical model → training → inference</span></div><h3>Machine learning for diagnostics</h3><p>Physics-based models and machine learning work together to estimate plasma parameters rapidly.</p><a href="research.html#machine-learning">Research approach & representative publication →</a></article><article><div class="interest-graphic"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M4 20h64M4 50h64" stroke="#23384e" stroke-width="2"/><rect x="15" y="10" width="19" height="20" fill="#fff" stroke="#8c2235" stroke-width="3"/><path d="M49 20v30M40 50h18M49 41v18" stroke="#8c2235" stroke-width="3"/><circle cx="49" cy="20" r="4" fill="#8c2235"/></svg><span>Kinetic equations → algorithms → validation</span></div><h3>Classical &amp; quantum simulation</h3><p>Comparing algorithms for kinetic plasma evolution, with attention to accuracy and computational resources.</p><a href="research.html#quantum">Research approach & representative publication →</a></article><article><div class="interest-graphic"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M7 49h57v12H7z" fill="none" stroke="#23384e" stroke-width="3"/><path d="m13 16 7 12-7 12m20-24 7 12-7 12m20-24 7 12-7 12" fill="none" stroke="#8c2235" stroke-width="3"/></svg><span>Discharge → reactive species → treatment</span></div><h3>Plasma-mediated processing</h3><p>Connecting reactor configuration and reactive-species distributions with environmental and food applications.</p><a href="research.html#applications">Research approach & representative publication →</a></article></div>
+<div class="home-lower">
+<section><p class="eyebrow">SELECTED PUBLICATIONS</p><h2>Research in focus</h2>
+<article class="selected-paper"><span>2026 · Preprint · Quantum simulation</span><h3>Efficient quantum simulation of linearized Vlasov–Poisson dynamics</h3><p>Comparing Trotter–Suzuki and THRIFT methods through accuracy and quantum-resource requirements.</p><a href="https://arxiv.org/abs/2608.23127">Read the preprint ↗</a></article>
+<article class="selected-paper"><span>2025 · Innovative Food Science &amp; Emerging Technologies</span><h3>Cold-plasma reactors for aflatoxin B1 treatment</h3><p>Connecting discharge configuration and reactive-species distribution with solid- and liquid-matrix treatment.</p><a href="https://doi.org/10.1016/j.ifset.2025.104203">Read publication ↗</a></article>
+<article class="selected-paper"><span>2024 · Spectrochimica Acta Part B</span><h3>Machine learning integrated with collisional-radiative plasma diagnostics</h3><p>Using physics-based models, optical spectroscopy, and machine learning for electron-temperature estimation.</p><a href="https://doi.org/10.1016/j.sab.2024.106909">Read publication ↗</a></article>
+<a class="text-link" href="publications.html">View publications →</a></section>
+<section><p class="eyebrow">ACADEMIC LEADERSHIP</p><h2>Service &amp; supervision</h2><p>Advisor, Outreach at IIT Tirupati since June 2025; Head of the Department of Physics from June 2021 to June 2024.</p><p>My supervision spans atomic collision theory, plasma diagnostics, machine learning, and plasma applications, with three Ph.D. graduates and five ongoing doctoral scholars.</p><p><a href="service.html">Professional service →</a> · <a href="talks.html">Talks &amp; outreach →</a> · <a href="group.html">Research group &amp; alumni →</a></p><div class="collaboration-note"><h3>Research enquiries</h3><p>I welcome enquiries about research opportunities and scientific or industry collaboration.</p><a href="contact.html">Get in touch →</a></div></section>
+</div>
+```

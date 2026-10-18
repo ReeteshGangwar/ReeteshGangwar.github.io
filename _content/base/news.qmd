@@ -1,0 +1,36 @@
+---
+title: "News & highlights"
+subtitle: "Research, teaching, and academic activities."
+toc: true
+---
+
+## Latest updates
+
+{{< include _latest-updates.qmd >}}
+
+## More highlights
+
+### Publications
+
+Recent work covers phase-resolved optical diagnostics, atomic excitation cross sections, fusion-relevant plasma emissions, and plasma-assisted ammonia synthesis. [Read the publications](publications.qmd)
+
+## 2025
+
+### Ph.D. graduates
+
+Indhu Suresh and P. S. N. S. R. Srikar completed their Ph.D.s in 2025. [Research group and alumni](group.qmd)
+
+### PLASMA 2025
+
+Guest Editor for the PLASMA 2025 special issue of *IEEE Transactions on Plasma Science*. [Special issue](https://ieeexplore.ieee.org/document/11349678)
+
+## Earlier highlights
+
+The PPL group’s nonthermal atmospheric photo-plasma reactor for wastewater-to-liquid-fertilizer processing was selected for IInvenTiv 2024 at IIT Hyderabad.
+
+```{=html}
+<figure class="media-figure archive-figure"><img src="assets/media/iinventiv-2024.webp" width="720" height="960" loading="lazy" decoding="async" alt="PPL participation at IInvenTiv 2024, IIT Hyderabad."><figcaption>PPL participation at IInvenTiv 2024, IIT Hyderabad.</figcaption></figure>
+```
+
+[Earlier laboratory news](https://www.ppliittp.com/general-clean)
+

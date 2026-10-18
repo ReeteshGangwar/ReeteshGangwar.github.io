@@ -1,0 +1,137 @@
+---
+title: "Teaching"
+subtitle: "Undergraduate, postgraduate, and doctoral teaching at IIT Tirupati."
+toc: true
+---
+
+## Undergraduate Courses
+
+::: {.record-row}
+::: {.record-label}
+PH301P
+:::
+::: {.record-body}
+**Applied Optics and Material Physics Laboratory** — Jul–Dec 2026.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH105L
+:::
+::: {.record-body}
+**Introduction to Quantum Science and Technology** — Jul–Dec 2026, Jul–Dec 2025, Jul–Dec 2024.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH001L
+:::
+::: {.record-body}
+**Physics Preparatory Course** — Jul–Dec 2023.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH1103 / PH103P
+:::
+::: {.record-body}
+**Physics Laboratory** — Jul–Dec 2025, Jan–Jun 2024, Summer 2023, Jan–Jun 2023, Jul–Dec 2022, Summer 2022, Jan–Jun 2021, Jan–Jun 2020, Jul–Dec 2019, Jan–Jun 2019.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH1202
+:::
+::: {.record-body}
+**Introduction to Electrodynamics and Quantum Mechanics** — Jan–Jun 2020, Jan–Jun 2019.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH1101
+:::
+::: {.record-body}
+**Introduction to Classical Mechanics** — Jul–Dec 2019.
+:::
+:::
+
+
+## Postgraduate and Ph.D. Courses
+
+::: {.record-row}
+::: {.record-label}
+PH605L
+:::
+::: {.record-body}
+**Basics and Applications of Plasma Physics** — Jul–Dec 2026, Jul–Dec 2025, Jul–Dec 2024, Jan–Jun 2024, Jan–Jun 2023, Jan–Jun 2022, Jul–Dec 2021, Jul–Dec 2020, Jul–Dec 2019.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH511L
+:::
+::: {.record-body}
+**Quantum Mechanics II** — Jan–Jun 2026, Jan–Jun 2025.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH603P
+:::
+::: {.record-body}
+**Advanced Physics Laboratory** — Jul–Dec 2024, Jul–Dec 2023.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH508P
+:::
+::: {.record-body}
+**Physics Laboratory I** — Jul–Dec 2024, Jul–Dec 2023.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH507L
+:::
+::: {.record-body}
+**Mathematical Physics II** — Jan–Jun 2024, Jan–Jun 2023, Jan–Jun 2022, Jan–Jun 2021.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH702L
+:::
+::: {.record-body}
+**Foundations of Experimental Physics** — Jan–Jun 2024, Jan–Jun 2023, Jan–Jun 2022.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH691G
+:::
+::: {.record-body}
+**Project Phase I** — Every Jul–Dec semester, 2021 – present.
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+PH692G
+:::
+::: {.record-body}
+**Project Phase II** — Every Jan–Jun semester, 2022 – present.
+:::
+:::
+

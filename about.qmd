@@ -1,0 +1,106 @@
+---
+title: "About me"
+subtitle: "Academic background, appointments, and honours."
+toc: true
+---
+
+I am an Associate Professor in the Department of Physics at IIT Tirupati, where I have been a faculty member since November 2018. My work connects theoretical atomic physics, experimental plasma diagnostics, and applied low-temperature plasma research.
+
+I received my Ph.D. in Physics from IIT Roorkee in 2012. Before joining IIT Tirupati, I held postdoctoral positions at Université de Montréal, Canada, and the Weizmann Institute of Science, Israel, and served as an Assistant Professor at VNIT Nagpur.
+
+## Academic appointments
+
+::: {.record-row}
+::: {.record-label}
+01/2024 – present
+:::
+::: {.record-body}
+**Associate Professor**, Department of Physics — Indian Institute of Technology Tirupati, India
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+11/2018 – 12/2023
+:::
+::: {.record-body}
+**Assistant Professor**, Department of Physics — Indian Institute of Technology Tirupati, India
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+03/2018 – 11/2018
+:::
+::: {.record-body}
+**Assistant Professor** — Visvesvaraya National Institute of Technology (VNIT), Nagpur, India
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+03/2016 – 03/2018
+:::
+::: {.record-body}
+**Postdoctoral Researcher** — Weizmann Institute of Science, Rehovot, Israel
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+11/2012 – 03/2016
+:::
+::: {.record-body}
+**Postdoctoral Researcher** — Université de Montréal, Montréal, Canada
+:::
+:::
+
+## Education
+
+::: {.record-row}
+::: {.record-label}
+2008 – 2012
+:::
+::: {.record-body}
+**Ph.D. in Physics** — Department of Physics, Indian Institute of Technology Roorkee, India — Thesis: *Study of collisional processes in atomic systems* — Area: Theoretical atomic and molecular physics, plasma physics
+:::
+:::
+
+## Fellowships and honours
+
+::: {.record-row}
+::: {.record-label}
+2018
+:::
+::: {.record-body}
+**Dean of Faculty Fellowship**, Weizmann Institute of Science, Israel
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2014
+:::
+::: {.record-body}
+**Visiting Researcher**, PROMES-CNRS, Perpignan, France
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2010
+:::
+::: {.record-body}
+**Commonwealth Exchange Program (Asia-Pacific) Research Grant**, Department of Foreign Affairs and International Trade Canada (DFAIT), for collaboration with Prof. A. D. Stauffer, York University, Toronto, Canada
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2008, 2010
+:::
+::: {.record-body}
+**CSIR-NET Junior and Senior Research Fellowships** (Physical Sciences), All India Rank 173 (SRF)
+:::
+:::
+

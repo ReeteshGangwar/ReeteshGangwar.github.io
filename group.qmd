@@ -1,0 +1,164 @@
+---
+title: "Research group"
+subtitle: "Students, researchers, and alumni of my research group."
+toc: true
+---
+
+## Ph.D. Scholars (ongoing)
+
+::: {.record-row}
+::: {.record-label}
+2024 – present
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/shriyash-patil.webp" width="157" height="280" alt="Mr. Shriyash Vilas Patil" loading="lazy" decoding="async">
+```
+
+**Mr. Shriyash Vilas Patil** – *Machine learning in plasma diagnostics*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2024 – present
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/guru-bhavan-narayana.webp" width="280" height="280" alt="Mr. M. Guru Bhavan Narayana" loading="lazy" decoding="async">
+```
+
+**Mr. M. Guru Bhavan Narayana** – *Machine learning in plasma modelling and diagnostics*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2024 – present
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/abhay-kumar.webp" width="280" height="246" alt="Mr. Abhay Kumar" loading="lazy" decoding="async">
+```
+
+**Mr. Abhay Kumar** – *Plasma-based wastewater treatment* (jointly with Dr. S. M. Maliyekkal)
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2022 – present
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/satish-babu.webp" width="280" height="259" alt="Mr. T. Satish Babu" loading="lazy" decoding="async">
+```
+
+**Mr. T. Satish Babu** – *Synthesis and alteration of materials via plasma-assisted techniques for novel applications* (jointly with Dr. S. M. Maliyekkal)
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2022 – present
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/pushparaj-gandhi.webp" width="280" height="280" alt="Mr. T. Pushparaj Gandhi" loading="lazy" decoding="async">
+```
+
+**Mr. T. Pushparaj Gandhi** – *Non-thermal atmospheric pressure plasma for treatment of mycotoxin-contaminated food* (jointly with Dr. S. M. Maliyekkal)
+:::
+:::
+
+## Ph.D. Graduates
+
+::: {.record-row}
+::: {.record-label}
+2020 – 2025
+:::
+::: {.record-body}
+**Dr. Indhu Suresh** — Thesis: *Relativistic calculation of cross sections for electron-induced processes and their application in optical plasma diagnostics and machine learning methods* — Now: Postdoctoral Researcher, ITER-India
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2019 – 2025
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/srikar.webp" width="264" height="280" alt="Dr. P. S. N. S. R. Srikar" loading="lazy" decoding="async">
+```
+
+**Dr. P. S. N. S. R. Srikar** — Thesis: *Characterization and application of atmospheric pressure plasmas by integrating optical spectroscopy with generalized population-kinetic models and machine learning methods* — Now: Plasma–Neutral Interactions Physicist, UK Atomic Energy Authority (UKAEA)
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2019 – 2024
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/allabakshi.webp" width="280" height="210" alt="Dr. S. M. Allabakshi" loading="lazy" decoding="async">
+```
+
+**Dr. S. M. Allabakshi** (jointly with Dr. Shihabudheen M. Maliyekkal) — Thesis: *Development of a novel nonthermal atmospheric pressure photo-plasma reactor for efficient treatment of textile wastewater* — Now: Postdoctoral Scientist, Department of Environmental Sciences and Forestry, Connecticut Agricultural Experiment Station, USA
+:::
+:::
+
+## Postdoctoral and M.S. research
+
+::: {.record-row}
+::: {.record-label}
+Postdoc
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/ritu-dey.webp" width="252" height="280" alt="Dr. Ritu Dey" loading="lazy" decoding="async">
+```
+
+**Dr. Ritu Dey** – *Cross-section calculations using relativistic distorted-wave (RDW) theory*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+M.S.
+:::
+::: {.record-body}
+```{=html}
+<img class="member-photo" src="assets/media/akhila-kc.webp" width="270" height="280" alt="Ms. Akhila K. C." loading="lazy" decoding="async">
+```
+
+**Ms. Akhila K. C.** (IISER Tirupati)
+:::
+:::
+
+## Master’s and project students
+
+### M.Tech., M.S., and project supervision
+
+Shanila M.; Somya Pal; Rahul Kumar; Priyanshi Chauhan; Jerin Abraham George; Syed Arwa Balkhi; Palli Priyanka.
+
+### M.Sc. supervision
+
+Kartik Paul; Diwaskar Rai; Akash Uniyal; Anamika; Chebrolu Rajyalakshi; Debabrat Rout; Saroj Meena; Sajal Soan; Muskan; Amit Kumar Jangid; Rahul Samriya.
+
+Current and past master’s and project supervision.
+
+```{=html}
+<details class="group-archive"><summary>From the laboratory archive · 2023</summary><figure class="media-figure archive-figure"><img src="assets/media/lab-group-2023.webp" width="960" height="720" loading="lazy" decoding="async" alt="A group photograph from the laboratory archive, 2023."><figcaption>A group photograph from the laboratory archive, 2023.</figcaption></figure></details>
+```
+
+## Collaboration
+
+Several applied plasma projects are jointly supervised with **Prof. Shihabudheen M. Maliyekkal**, Department of Civil & Environmental Engineering, IIT Tirupati.
+
+[Contact me about research opportunities](contact.qmd)
+
+::: {.lab-crosslink}
+**Plasma Processing Lab** · [Lab team](https://www.ppliittp.com/about) · [Collaborators & visitors](https://www.ppliittp.com/copy-of-people)
+:::
+

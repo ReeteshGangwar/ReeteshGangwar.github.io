@@ -1,0 +1,100 @@
+---
+title: "Research projects"
+subtitle: "Sponsored research and industry consultancy."
+toc: true
+---
+
+Sponsored research and consultancy in plasma physics, atomic processes, quantum computing, and applications. Project roles and sanctioned funding are listed below.
+
+Total sanctioned: ₹ 358.39 lakh (₹ 3.58 crore) across 9 projects; ₹ 117.75 lakh as PI.
+
+---
+
+## Sponsored Research Projects
+
+::: {.record-row}
+::: {.record-label}
+2026 – 2029
+:::
+::: {.record-body}
+**DST, National Quantum Mission (NQM)** · Co-PI · ₹ 70.64 lakh · Ongoing — *Quantum machine learning: Reservoir computing and PDE solvers*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2025 – 2026
+:::
+::: {.record-body}
+**SS Deepam Biotek Pvt. Ltd.** · Co-PI · ₹ 25.06 lakh · Ongoing — *Development of atmospheric nonthermal plasma-based liquid fertilizer as a natural growth enhancer and biocidal agent*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2024 – 2027
+:::
+::: {.record-body}
+**DST-SERB, Core Research Grant** · PI · ₹ 53.61 lakh · Ongoing — *Development of a novel nonthermal atmospheric pressure plasma reactor for the prevention of aflatoxin in food and agriculture products*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2023 – 2028
+:::
+::: {.record-body}
+**DST, Centre of Excellence** · Co-PI · ₹ 97.36 lakh · Ongoing — *Membrane technologies for desalination, brine management and water recycling*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2023 – 2026
+:::
+::: {.record-body}
+**DAE-BRNS** · PI · ₹ 17.22 lakh · Completed — *Development of an atomic processes database using calculation and measurement in tokamak and laboratory plasmas*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2020 – 2021
+:::
+::: {.record-body}
+**DST-SERB, Special Call on COVID-19** · PI · ₹ 20.10 lakh · Completed — *Development of a portable optical cavity sterilization unit*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2019 – 2022
+:::
+::: {.record-body}
+**DST-SERB, Core Research Grant** · PI · ₹ 24.45 lakh · Completed — *A novel scheme to cool the translational as well as internal degrees of freedom of any molecular ion beam*
+:::
+:::
+
+## Consultancy Projects
+
+::: {.record-row}
+::: {.record-label}
+2025
+:::
+::: {.record-body}
+**FaradayEarth Pvt. Ltd.** · PI · ₹ 2.36 lakh · Completed — *Optical diagnostics of an atmospheric-pressure industry preparatory plasma reactor and preliminary feasibility study for implementing data-driven machine-learning-based optical diagnostics*
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2024 – 2025
+:::
+::: {.record-body}
+**Ozone Research and Applications India Pvt. Ltd.** · Co-PI · ₹ 47.59 lakh · Completed — *Development of atmospheric nonthermal plasma-based liquid fertilizer as a natural growth enhancer and biocidal agent*
+:::
+:::
+
+::: {.lab-crosslink}
+**Plasma Processing Lab** · [Laboratory project overview](https://www.ppliittp.com/copy-of-publications). The project record above follows my October 2026 CV.
+:::

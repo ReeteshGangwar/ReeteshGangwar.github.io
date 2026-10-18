@@ -1,0 +1,128 @@
+---
+title: "Service & leadership"
+subtitle: "Academic leadership, scientific service, and memberships."
+toc: true
+---
+
+## Administrative Responsibilities at IIT Tirupati
+
+::: {.record-row}
+::: {.record-label}
+06/2025 – present
+:::
+::: {.record-body}
+**Advisor, Outreach** (equivalent to Associate Dean)
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+2025 batch
+:::
+::: {.record-body}
+**Faculty Advisor**, M.Sc. Physics
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+06/2021 – 06/2024
+:::
+::: {.record-body}
+**Head, Department of Physics**
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+08/2019 – 08/2021
+:::
+::: {.record-body}
+**Hostel Warden**
+:::
+:::
+
+## Conference organization {#conference-organization}
+
+::: {.record-row}
+::: {.record-label}
+27–29 December 2025
+:::
+::: {.record-body}
+**Convener, PLASMA 2025** — 40th PSSI National Symposium on Plasma Science & Technology, IIT Tirupati. Served among the conveners alongside Prof. Shihabudheen M. Maliyekkal and Dr. S. Sunil Kumar. The symposium brought together the plasma-science community across fundamental research, fusion, space plasmas, and applications. [Conference archive](https://iittpplasma2025.vercel.app/) · [Proceedings & talks archive](https://iittpplasma2025.vercel.app/proceedings).
+:::
+:::
+
+## Service to the Scientific Community
+
+::: {.record-row}
+::: {.record-label}
+Editorial
+:::
+::: {.record-body}
+**Guest Editor**, *IEEE Transactions on Plasma Science*, Special Issue on the 40th PSSI National Symposium on Plasma Science and Technology (PLASMA 2025) – [view special issue](https://ieeexplore.ieee.org/document/11349678)
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+Societies
+:::
+::: {.record-body}
+**Executive Board Member**, Plasma Science Society of India (PSSI) and Power Beam Society of India (PBSI)
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+Conferences
+:::
+::: {.record-body}
+**Scientific Advisory Committee Member**, ISPC 2025, PLASMA 2024 and PLASMA 2023, and other national and international conferences
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+Reviewing
+:::
+::: {.record-body}
+**Reviewer** for international journals published by IEEE, Elsevier, Wiley, IOP Publishing, Springer Nature and APS
+:::
+:::
+
+::: {.record-row}
+::: {.record-label}
+Evaluation
+:::
+::: {.record-body}
+**Examiner/Evaluator** for Ph.D. theses, research project proposals and books
+:::
+:::
+
+## Talks and outreach
+
+[View invited talks, keynote addresses, lectures, and tutorials](talks.qmd), organized by year from 2019 onwards.
+
+## Scientific societies
+
+Life Member, Indian Society of Atomic and Molecular Physics (ISAMP)
+
+---
+
+Life Member, Indian Physics Association (IPA)
+
+---
+
+Life Member, Plasma Science Society of India (PSSI)
+
+---
+
+Life Member, Power Beam Society of India (PBSI)
+
+---
+
+Life Member, Division of Plasma Physics, Association of Asia Pacific Physical Societies (AAPPS-DPP)
+
+---
+

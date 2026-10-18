@@ -1,0 +1,74 @@
+project:
+  type: website
+  pre-render: python3 scripts/build_updates.py
+  post-render: python3 scripts/check_site.py
+  render:
+    - index.qmd
+    - about.qmd
+    - research.qmd
+    - publications.qmd
+    - projects.qmd
+    - group.qmd
+    - teaching.qmd
+    - service.qmd
+    - talks.qmd
+    - news.qmd
+    - contact.qmd
+    - cv.qmd
+  resources:
+    - assets/
+website:
+  site-url: https://reeteshgangwar.github.io
+  title: "Reetesh Kumar Gangwar"
+  description: "Academic website of Reetesh Kumar Gangwar, Associate Professor of Physics at IIT Tirupati."
+  navbar:
+    title: '<img src="assets/media/plasma-processing-lab.webp" class="ppl-navbar-logo" alt="Plasma Processing Lab logo" width="133" height="64">'
+    logo: assets/media/iit-tirupati-logo.webp
+    logo-alt: "IIT Tirupati logo"
+    background: white
+    foreground: "#8c2235"
+    collapse-below: xl
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Research
+        menu:
+          - href: research.qmd
+            text: Research interests
+          - href: projects.qmd
+            text: Projects
+      - href: publications.qmd
+        text: Publications
+      - href: group.qmd
+        text: Group
+      - href: teaching.qmd
+        text: Teaching
+      - text: About
+        menu:
+          - href: about.qmd
+            text: Biography & appointments
+          - href: service.qmd
+            text: Service & leadership
+          - href: talks.qmd
+            text: Talks & outreach
+          - href: contact.qmd
+            text: Contact & opportunities
+      - href: cv.qmd
+        text: CV
+  page-footer:
+    left: "Reetesh Kumar Gangwar · Department of Physics · IIT Tirupati"
+    right:
+      - text: Email
+        href: mailto:reetesh@iittp.ac.in
+      - text: Plasma Processing Lab
+        href: https://www.ppliittp.com/
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: On this page
+    link-external-newwindow: true
+    smooth-scroll: true
+    anchor-sections: true
+    lang: en

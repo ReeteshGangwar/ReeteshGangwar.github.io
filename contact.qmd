@@ -1,0 +1,37 @@
+---
+title: "Contact & opportunities"
+subtitle: "Research enquiries, collaboration, and joining the group."
+toc: false
+---
+
+::: {.contact-panel}
+**Dr. Reetesh Kumar Gangwar**  
+Associate Professor, Department of Physics  
+Indian Institute of Technology Tirupati  
+Office AB2-313, Tirupati, Andhra Pradesh 517619, India
+
+**Email:** [reetesh@iittp.ac.in](mailto:reetesh@iittp.ac.in)  
+**Telephone:** +91 87725 03457
+:::
+
+## Research opportunities
+
+I welcome enquiries from motivated candidates interested in low-temperature plasma physics, optical diagnostics, atomic processes, machine learning, and plasma applications.
+
+For enquiries about internships, doctoral or postdoctoral research, please email your CV and a short description of your interests. This is an invitation to enquire; specific funded vacancies will be announced separately.
+
+## Collaboration
+
+Please contact me to discuss experimental, theoretical, or industry collaborations related to our research themes.
+
+## Academic profiles
+
+- [Institute profile](https://physics.iittp.ac.in/DrReetesh.html)
+- [Google Scholar](https://scholar.google.co.in/citations?user=r6HvPAsAAAAJ&hl=en)
+- [ResearchGate](https://www.researchgate.net/profile/Reetesh-Gangwar-2)
+- [Plasma Processing Lab](https://www.ppliittp.com/)
+
+
+::: {.lab-crosslink}
+**Plasma Processing Lab** · [Laboratory opportunities](https://www.ppliittp.com/contact) · [Research themes](https://www.ppliittp.com/research)
+:::

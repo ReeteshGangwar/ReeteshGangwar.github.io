@@ -1,0 +1,115 @@
+---
+title: "Publications"
+subtitle: "Recent journal articles, preprints, book chapters, and patent filings."
+toc: true
+---
+
+Journal articles, preprints, book chapters, and patent disclosures from **2024–2026**. See [Google Scholar](https://scholar.google.co.in/citations?user=r6HvPAsAAAAJ&hl=en) for the complete publication record.
+
+## Journal Articles – 2026
+
+::: {.publication-entry}
+S. B. Thota, P. S. N. S. R. Srikar, S. Mathengattil, S. M. Maliyekkal and **R. K. Gangwar**, “Phase-resolved optical diagnostics of waveform-modulated Ar nonthermal atmospheric pressure plasma jet”, *Spectrochimica Acta Part B: Atomic Spectroscopy*, 107649 (2026). [Publisher link](https://www.sciencedirect.com/science/article/pii/S0584854726002004)
+:::
+
+::: {.publication-entry}
+M. G. B. Narayana, I. Suresh and **R. K. Gangwar**, “Calculation of fine structure resolved electron impact excitation cross sections of Al I using relativistic distorted wave method”, *IEEE Transactions on Plasma Science* (2026). [Publisher link](https://ieeexplore.ieee.org/abstract/document/11644741/)
+:::
+
+::: {.publication-entry}
+R. Dey, I. Suresh, D. Sharma, M. B. Chowdhuri, *et al.*, R. Srivastava, J. Ghosh and **R. K. Gangwar**, “Fine-structure resolved electron impact excitation of O IV and O V: A comprehensive relativistic study for plasma modeling and diagnostics”, *Journal of Physics B: Atomic, Molecular and Optical Physics* **59** (14) (2026). [DOI](https://doi.org/10.1088/1361-6455/ae872a)
+:::
+
+::: {.publication-entry}
+A. Jayanarasimhan, A. U. Shetty, D. Dhanabal, S. Acharya, K. V. S. S. Bhargavi, **R. K. Gangwar**, D. Saha and S. Ranjan, “Warm non-equilibrium plasma-assisted catalysis for sustainable ammonia synthesis”, *Green Chemistry* **28**, 8757–8765 (2026). [Publisher link](https://pubs.rsc.org/gc/article-abstract/28/21/8757/1226472)
+:::
+
+::: {.publication-entry}
+V. Bende, P. S. N. S. R. Srikar, **R. K. Gangwar**, R. L. Bhardwaj and R. Kar, “A semi-empirical approach to Boltzmann plot analysis for cold atmospheric pressure plasma: Comparison with collision-radiative modelling”, *Vacuum*, 115263 (2026). [DOI](https://doi.org/10.1016/j.vacuum.2026.115263)
+:::
+
+::: {.publication-entry}
+R. Dey, A. Agrawal, **R. K. Gangwar**, D. Sharma, R. Srivastava, M. B. Chowdhuri and J. Ghosh, “Simulation study of neutral tungsten emissions for fusion applications”, *Plasma and Fusion Research* **21** (Special Issue 1), 2403022 (2026); also arXiv:2509.00878. [DOI](https://doi.org/10.1585/pfr.21.2403022)
+:::
+
+## Journal Articles – 2025
+
+::: {.publication-entry}
+P. S. N. S. R. Srikar, I. Suresh and **R. K. Gangwar**, “Machine learning-enabled prediction of optical emission spectra in scalable non-thermal Ar atmospheric pressure plasma multi jet”, *Journal of Physics D: Applied Physics* **58**, 415204 (2025). [DOI](https://doi.org/10.1088/1361-6463/ae0b81)
+:::
+
+::: {.publication-entry}
+T. Pushparaj Gandhi, M. G. C. Pavan Sai, S. M. Allabakshi, **R. K. Gangwar** and S. M. Maliyekkal, “Transforming antibiotic treatment: Unleashing the nexus between UV photons and nonthermal atmospheric pressure air plasma in pharmaceutical wastewater”, *Journal of Environmental Chemical Engineering* **13**, 119160 (2025). [Publisher link](https://www.sciencedirect.com/science/article/pii/S2213343725038564)
+:::
+
+::: {.publication-entry}
+V. Bende, V. Nagar, P. S. N. S. R. Srikar, **R. K. Gangwar**, D. Bhale, R. L. Bhardwaj and R. Kar, “Reactive species dynamics and bactericidal mechanisms in cold atmospheric pressure plasma with gas admixtures”, *Vacuum* **239**, 114393 (2025). [Publisher link](https://www.sciencedirect.com/science/article/pii/S0042207X25003835)
+:::
+
+::: {.publication-entry}
+T. Pushparaj Gandhi, P. S. N. S. R. Srikar, S. M. Allabakshi, **R. K. Gangwar** and S. M. Maliyekkal, “Removal of aflatoxin B1 from solid and liquid matrices using cold atmospheric plasma reactors: Insights into reactor configurations and food quality testing”, *Innovative Food Science & Emerging Technologies*, 104203 (2025). [Publisher link](https://www.sciencedirect.com/science/article/pii/S1466856425002875)
+:::
+
+::: {.publication-entry}
+P. Kumar, P. S. N. S. R. Srikar, D. Dahatonde, **R. K. Gangwar** and T. Nallamilli, “Effect of atmospheric pressure cold plasma treatment on charge, structure, thermal properties and coacervation behavior of pea protein isolate with alginate”, *Innovative Food Science & Emerging Technologies* **101**, 103948 (2025). [Publisher link](https://www.sciencedirect.com/science/article/pii/S1466856425000323)
+:::
+
+## Journal Articles – 2024
+
+::: {.publication-entry}
+S. M. Allabakshi, P. S. N. S. R. Srikar, S. Gomosta, **R. K. Gangwar** and S. M. Maliyekkal, “Treatment of textile dyes in a photo-surface dielectric barrier discharge hybrid reactor: Unraveling the degradation mechanisms”, *Chemosphere* **368**, 143775 (2024). [Publisher link](https://www.sciencedirect.com/science/article/pii/S0045653524026766)
+:::
+
+::: {.publication-entry}
+I. Suresh, P. S. N. S. R. Srikar and **R. K. Gangwar**, “Integration of ML methods with CR model-based optical diagnostic for the estimation of electron temperature in Ga laser produced plasma”, *Physics of Plasmas* **31**, 113501 (2024). [Publisher link](https://pubs.aip.org/aip/pop/article/31/11/113501/3319199)
+:::
+
+::: {.publication-entry}
+P. S. N. S. R. Srikar, S. M. Allabakshi, S. Gomosta, S. M. Maliyekkal and **R. K. Gangwar**, “Development of efficient nonthermal atmospheric-pressure Ar-plasma jet through simultaneous spectroscopic characterization and radical quantification”, *Journal of Physics D: Applied Physics* **57**, 395204 (2024). [DOI](https://doi.org/10.1088/1361-6463/ad5c76)
+:::
+
+::: {.publication-entry}
+P. S. N. S. R. Srikar, I. Suresh and **R. K. Gangwar**, “Accelerated real-time plasma diagnostics: Integrating argon collisional-radiative model with machine learning methods”, *Spectrochimica Acta Part B: Atomic Spectroscopy* **215**, 106909 (2024). [Publisher link](https://www.sciencedirect.com/science/article/pii/S0584854724000533)
+:::
+
+::: {.publication-entry}
+S. A. A. Balkhi, S. M. Allabakshi, P. S. N. S. R. Srikar, S. Gomosta, **R. K. Gangwar** and S. M. Maliyekkal, “Unwinding the correlation between atmospheric pressure plasma jet operating parameters and variation in antibiotic wastewater characteristics”, *Journal of Water Process Engineering* **60**, 105186 (2024). [Publisher link](https://www.sciencedirect.com/science/article/pii/S2214714424004185)
+:::
+
+::: {.publication-entry}
+I. Suresh, Priti, R. Srivastava and **R. K. Gangwar**, “Fully relativistic distorted wave calculations of electron impact excitation of gallium atom: Cross sections relevant for plasma kinetic modeling”, *Spectrochimica Acta Part B: Atomic Spectroscopy* **213**, 106860 (2024). [Publisher link](https://www.sciencedirect.com/science/article/pii/S0584854724000041)
+:::
+
+::: {.publication-entry}
+I. Suresh, Priti, R. Srivastava and **R. K. Gangwar**, “Fine structure resolved excitation cross sections of singly ionized Ga for the modeling and diagnostics of Ga plasmas”, *Plasma Sources Science and Technology* **33**, 025018 (2024). [DOI](https://doi.org/10.1088/1361-6595/ad27ec)
+:::
+
+## Book Chapter – 2025
+
+::: {.publication-entry}
+S. M. Allabakshi, P. S. N. S. R. Srikar, **R. K. Gangwar** and S. M. Maliyekkal, “Nonthermal plasma technology for degradation of dyes in wastewater”, in *Innovative and Hybrid Advanced Oxidation Processes for Water Treatment*, Elsevier, pp. 255–278 (2025). [Publisher link](https://www.sciencedirect.com/science/article/pii/B9780443141003000016)
+:::
+
+## Preprints (arXiv)
+
+::: {.publication-entry}
+K. Paul, R. V, S. Aravinda and **R. K. Gangwar**, “Efficient quantum simulation of linearized Vlasov–Poisson dynamics using Trotter and THRIFT Hamiltonian simulation methods”, arXiv:2608.23127 (2026). [Publisher link](https://arxiv.org/abs/2608.23127)
+:::
+
+::: {.publication-entry}
+R. Dey, A. Agarwal, **R. K. Gangwar**, D. Sharma, M. B. Chowdhuri, R. Srivastava and J. Ghosh, “Relativistic calculations of electron impact excitation cross-sections of neutral tungsten”, arXiv:2603.02612 (2026). [Publisher link](https://arxiv.org/abs/2603.02612)
+:::
+
+*Complete list of publications:*
+[**Google Scholar profile**](https://scholar.google.co.in/citations?user=r6HvPAsAAAAJ&hl=en)
+
+## Patents
+
+::: {.publication-entry}
+S. M. Maliyekkal, **R. K. Gangwar**, S. M. Allabakshi, P. S. N. S. R. Srikar and A. Kumar, “Chemo-photo-plasma hybrid advanced oxidation process for ultrafast removal of environmental pollution” (Invention disclosure submitted)
+:::
+
+::: {.publication-entry}
+S. M. Maliyekkal, S. Soujit, G. Vajitha, P. S. N. S. R. Srikar and **R. K. Gangwar**, “Plasma-UV assisted bulk production of graphenic material with tunable surface area and porosity” (Complete patent application filed)
+:::
+

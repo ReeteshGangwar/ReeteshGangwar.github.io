@@ -1,0 +1,105 @@
+---
+title: "Research interests"
+subtitle: "Atomic processes, quantitative plasma diagnostics, and applications."
+toc: true
+---
+
+My research connects microscopic collision processes with observable plasma behaviour. Experiments, atomic calculations, population-kinetic modelling, and computational methods form a linked programme: understanding how plasmas work and using that understanding to guide their applications.
+
+## Plasma sources and optical diagnostics {#sources}
+
+We develop low-temperature plasma systems and investigate how source geometry and operating conditions affect their behaviour. Optical emission measurements are interpreted through plasma models, linking the observed light to the processes within the discharge. Electrical measurements and reactive-species characterization complement this approach.
+
+```{=html}
+<figure class="research-schematic" aria-labelledby="diagnostics-caption"><div class="science-flow"><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M22 8v24h24V8M26 32c-8 15 22 18 12 34" fill="none" stroke="#8c2235" stroke-width="4"/><path d="M34 35c-10 10 10 12 0 22" fill="none" stroke="#9a65ac" stroke-width="6"/><path d="M8 70h55" stroke="#23384e" stroke-width="3"/></svg><strong>Generate plasma</strong><span>Select source and operating conditions</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M8 8v58h62M12 59h10l3-29 4 29h9l3-43 4 43h8l3-18 3 18h8" fill="none" stroke="#8c2235" stroke-width="3"/></svg><strong>Measure emission</strong><span>Resolve optical signatures</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><rect x="10" y="12" width="52" height="48" rx="3" fill="none" stroke="#23384e" stroke-width="3"/><path d="M18 25h36M18 36h20M18 47h31" stroke="#8c2235" stroke-width="3"/></svg><strong>Interpret the plasma</strong><span>Connect spectra with plasma properties</span></div></div><figcaption id="diagnostics-caption">From a plasma source to a quantitative optical diagnostic. Conceptual schematic; not measured data.</figcaption></figure>
+```
+
+The central question is how quantitative diagnostics can guide the design and operation of plasma sources, rather than relying on visible discharge appearance alone.
+
+::: {.research-paper}
+**Representative publication · 2024** — [Development of efficient nonthermal atmospheric-pressure Ar-plasma jet through simultaneous spectroscopic characterization and radical quantification](https://doi.org/10.1088/1361-6463/ad5c76) — *Journal of Physics D: Applied Physics*. Connects source characterization with reactive-species measurements.
+:::
+
+::: {.research-support}
+[Related author presentation: spectroscopic diagnostics and machine learning](https://www.aappsdpp.org/DPP2024/html/3contents/pdf/5567.pdf).
+:::
+
+```{=html}
+<details class="research-media"><summary>View plasma sources and diagnostic instrumentation</summary><div class="lab-gallery"><figure class="media-figure"><img src="assets/media/argon-plasma-jet.webp" width="800" height="763" loading="lazy" decoding="async" alt="Argon plasma jet"><figcaption>Argon plasma jet.</figcaption></figure><figure class="media-figure"><img src="assets/media/plasma-multi-jet.webp" width="960" height="720" loading="lazy" decoding="async" alt="Multi-jet plasma system"><figcaption>Multi-jet system.</figcaption></figure><figure class="media-figure"><img src="assets/media/optical-diagnostics.webp" width="960" height="720" loading="lazy" decoding="async" alt="Optical diagnostic instrumentation"><figcaption>Optical diagnostic instrumentation.</figcaption></figure></div></details>
+```
+
+## Atomic processes and plasma kinetics {#atomic}
+
+Reliable atomic data are essential for interpreting plasma spectra. We calculate electron-impact excitation cross sections and rate coefficients, resolving the fine structure needed by population-kinetic models. This connects quantum-mechanical collision calculations with the light emitted by laboratory plasmas.
+
+```{=html}
+<figure class="research-schematic" aria-labelledby="atomic-data-caption"><div class="science-flow"><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M10 60h50M20 35h40M30 12h30M25 54V40m0 0-5 7m5-7 5 7" fill="none" stroke="#23384e" stroke-width="3"/><circle cx="12" cy="20" r="5" fill="#8c2235"/><path d="m18 21 12 9" stroke="#8c2235" stroke-width="3"/></svg><strong>Electron–atom collisions</strong><span>Fine-structure-resolved excitation</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><rect x="10" y="12" width="52" height="48" rx="3" fill="none" stroke="#23384e" stroke-width="3"/><path d="M18 25h36M18 36h20M18 47h31" stroke="#8c2235" stroke-width="3"/></svg><strong>Calculate atomic data</strong><span>Cross sections and rate coefficients</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M8 8v58h62M12 59h10l3-29 4 29h9l3-43 4 43h8l3-18 3 18h8" fill="none" stroke="#8c2235" stroke-width="3"/></svg><strong>Model emission</strong><span>Population kinetics and spectral interpretation</span></div></div><figcaption id="atomic-data-caption">Atomic collision data connect microscopic processes with plasma emission. Conceptual schematic; not measured data.</figcaption></figure>
+```
+
+Our gallium study uses a relativistic distorted-wave approach with multiconfigurational Dirac–Fock wavefunctions. It provides excitation data from ground and first excited states, together with rate-coefficient fits for use in kinetic models.
+
+::: {.research-paper}
+**Representative publication · 2024** — [Fully relativistic distorted wave calculations of electron impact excitation of gallium atom: Cross sections relevant for plasma kinetic modeling](https://doi.org/10.1016/j.sab.2024.106860) — *Spectrochimica Acta Part B: Atomic Spectroscopy*. Provides fine-structure-resolved data for plasma modelling.
+:::
+
+```{=html}
+<details class="research-media"><summary>View the argon collisional-radiative model framework</summary><figure class="media-figure technical-figure"><img src="assets/media/collisional-radiative-model.webp" width="1100" height="770" loading="lazy" decoding="async" alt="Argon collisional-radiative model energy-level framework"><figcaption>Argon collisional-radiative model framework from the laboratory archive.</figcaption></figure></details>
+```
+
+<span id="computation"></span>
+
+## Machine learning for optical diagnostics {#machine-learning}
+
+Collisional-radiative models provide a physical basis for extracting information from spectra, but repeated model evaluation can be computationally demanding. We investigate machine learning as a surrogate within this diagnostic workflow, linking model-generated training data with measured optical signals.
+
+```{=html}
+<figure class="research-schematic" aria-labelledby="ml-diagnostics-caption"><div class="science-flow"><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><rect x="10" y="12" width="52" height="48" rx="3" fill="none" stroke="#23384e" stroke-width="3"/><path d="M18 25h36M18 36h20M18 47h31" stroke="#8c2235" stroke-width="3"/></svg><strong>Build a training set</strong><span>Use collisional-radiative calculations</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M14 20 36 12 59 28 36 55 14 20 36 34 59 28M14 53 36 34 36 12M14 53 36 55" fill="none" stroke="#9aadb9" stroke-width="2"/><g fill="#8c2235"><circle cx="14" cy="20" r="6"/><circle cx="14" cy="53" r="6"/><circle cx="36" cy="12" r="6"/><circle cx="36" cy="34" r="6"/><circle cx="36" cy="55" r="6"/><circle cx="59" cy="28" r="6"/></g></svg><strong>Train a surrogate</strong><span>Random forest or neural network</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M10 12h50v50H10z" fill="none" stroke="#23384e" stroke-width="3"/><path d="m19 37 11 11 23-27" fill="none" stroke="#8c2235" stroke-width="4"/></svg><strong>Estimate parameters</strong><span>Compare with physics-based diagnostics</span></div></div><figcaption id="ml-diagnostics-caption">Physics-informed training supports rapid optical parameter estimation. Conceptual schematic; not measured data.</figcaption></figure>
+```
+
+Our 2024 study combines optical emission spectroscopy and an argon collisional-radiative model with random-forest and deep-neural-network methods to estimate electron temperature in a nonthermal atmospheric-pressure plasma jet. The contribution is a connection between physics-based interpretation and rapid inference.
+
+::: {.research-paper}
+**Representative publication · 2024** — [Accelerated real-time plasma diagnostics: Integrating argon collisional-radiative model with machine learning methods](https://doi.org/10.1016/j.sab.2024.106909) — *Spectrochimica Acta Part B: Atomic Spectroscopy*. Integrates spectroscopy, collisional-radiative modelling, and machine learning.
+:::
+
+## Classical and quantum plasma simulation {#quantum}
+
+We are developing computational approaches to atomic and plasma physics, including quantum algorithms for kinetic plasma dynamics. A key question is how accurately an algorithm reproduces physical evolution and what computational resources that accuracy requires.
+
+```{=html}
+<figure class="research-schematic" aria-labelledby="quantum-simulation-caption"><div class="science-flow"><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M6 38c8-38 16 38 24 0s16 38 24 0 12 0 12 0" fill="none" stroke="#8c2235" stroke-width="3"/><path d="M6 65h61" stroke="#23384e" stroke-width="2"/></svg><strong>Plasma kinetic equations</strong><span>Linearized Vlasov–Poisson dynamics</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M4 20h64M4 50h64" stroke="#23384e" stroke-width="2"/><rect x="15" y="10" width="19" height="20" fill="#fff" stroke="#8c2235" stroke-width="3"/><path d="M49 20v30M40 50h18M49 41v18" stroke="#8c2235" stroke-width="3"/><circle cx="49" cy="20" r="4" fill="#8c2235"/></svg><strong>Hamiltonian simulation</strong><span>Trotter–Suzuki and THRIFT methods</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M10 12h50v50H10z" fill="none" stroke="#23384e" stroke-width="3"/><path d="m19 37 11 11 23-27" fill="none" stroke="#8c2235" stroke-width="4"/></svg><strong>Benchmark performance</strong><span>Accuracy, convergence and quantum resources</span></div></div><figcaption id="quantum-simulation-caption">A research workflow for comparing quantum approaches to plasma dynamics. Conceptual schematic; not measured data.</figcaption></figure>
+```
+
+Our 2026 preprint reformulates discretized linearized Vlasov–Poisson dynamics as a Hermitian Hamiltonian and compares Trotter–Suzuki and THRIFT evolution methods. The study evaluates electric-field evolution, convergence, fidelity, and quantum-resource requirements; it is a methodological comparison, not a claim of demonstrated quantum advantage.
+
+::: {.research-paper}
+**Representative publication · 2026 · preprint** — [Efficient Quantum Simulation of Linearized Vlasov–Poisson Dynamics Using Trotter and THRIFT Hamiltonian Simulation Methods](https://arxiv.org/abs/2608.23127) — *arXiv:2608.23127*. Explores accuracy and resource trade-offs in gate-based plasma simulation.
+:::
+
+## Plasma-mediated processing {#applications}
+
+We investigate how plasma-generated reactive species can support environmental treatment, food safety, and agriculture. Reactor geometry, discharge distribution, treatment matrix, and energy use are considered together when assessing performance.
+
+```{=html}
+<figure class="research-schematic" aria-labelledby="plasma-processing-caption"><div class="science-flow"><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M7 49h57v12H7z" fill="none" stroke="#23384e" stroke-width="3"/><path d="m13 16 7 12-7 12m20-24 7 12-7 12m20-24 7 12-7 12" fill="none" stroke="#8c2235" stroke-width="3"/></svg><strong>Choose the discharge</strong><span>Geometry and spatial distribution</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M13 13v50h47V13M14 42q12-10 24 0t22 0" fill="none" stroke="#23384e" stroke-width="3"/><g fill="#8c2235"><circle cx="25" cy="31" r="4"/><circle cx="46" cy="22" r="4"/><circle cx="35" cy="52" r="4"/></g></svg><strong>Characterize reactive species</strong><span>Study solid and liquid matrices</span></div><span class="science-arrow" aria-hidden="true">→</span><div class="science-step"><svg class="science-icon" viewBox="0 0 76 76" aria-hidden="true"><path d="M10 12h50v50H10z" fill="none" stroke="#23384e" stroke-width="3"/><path d="m19 37 11 11 23-27" fill="none" stroke="#8c2235" stroke-width="4"/></svg><strong>Evaluate treatment</strong><span>Degradation, energy yield and quality</span></div></div><figcaption id="plasma-processing-caption">Reactor design and reactive-species distributions inform treatment performance. Conceptual schematic; not measured data.</figcaption></figure>
+```
+
+Our aflatoxin B1 study compares surface dielectric barrier and corona discharges in solid and liquid matrices. It shows why a stronger localized discharge is not automatically the better treatment: spatial coverage and matrix matter. The work also examines energy yield and changes in peanut appearance and texture.
+
+::: {.research-paper}
+**Representative publication · 2025** — [Removal of Aflatoxin B1 from solid and liquid matrices using cold atmospheric plasma reactors: Insights into reactor configurations and food quality testing](https://doi.org/10.1016/j.ifset.2025.104203) — *Innovative Food Science & Emerging Technologies*. Connects discharge configuration with reactive-species distribution and treatment outcomes.
+:::
+
+```{=html}
+<details class="research-media"><summary>View the surface dielectric barrier discharge</summary><figure class="media-figure facility-figure"><img src="assets/media/surface-dielectric-discharge.webp" width="960" height="510" loading="lazy" decoding="async" alt="Surface dielectric barrier discharge"><figcaption>Surface dielectric barrier discharge in the Plasma Processing Lab.</figcaption></figure></details>
+```
+
+## Facilities and collaboration
+
+The Plasma Processing Lab supports plasma-source development, optical spectroscopy and imaging, electrical characterization, reactive-species quantification, and computational modelling.
+
+[Publications](publications.qmd) · [Research projects](projects.qmd) · [Research group](group.qmd)
+
+::: {.lab-crosslink}
+**Plasma Processing Lab** · [Research and facilities](https://www.ppliittp.com/research) · [Collaborators & visitors](https://www.ppliittp.com/copy-of-people)
+:::

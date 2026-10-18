@@ -1,0 +1,12 @@
+Curated local website media
+
+Portrait: supplied CV photograph.
+IIT Tirupati and Plasma Processing Lab logos, laboratory and researcher
+photographs: supplied media from www.ppliittp.com.
+
+Original media is retained outside the Website folder. Website photographs are
+optimized WebP copies; image content has not been regenerated. Research workflow
+icons are original code-native conceptual schematics, not experimental data.
+
+Historical photographs are labelled as archival, and noncritical photos use lazy
+loading. No original video or large paper-page screenshots are embedded.

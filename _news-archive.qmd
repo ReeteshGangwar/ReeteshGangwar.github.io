@@ -1,0 +1,19 @@
+::: {.news-updates}
+
+### Keynote on atmospheric-pressure plasma
+
+**2 April 2026** · Keynote address on “Atmospheric pressure plasma: A sustainable platform for next-generation technologies” at KL University.
+
+### Quantum machine learning research
+
+**2026–2029 project** · Co-investigator on a DST National Quantum Mission project on reservoir computing and PDE solvers. [Project details](projects.qmd)
+
+### Outreach leadership
+
+**June 2025** · Appointed Advisor, Outreach at IIT Tirupati.
+
+### Convener of PLASMA 2025
+
+**27–29 December 2025** · Convened the 40th PSSI National Symposium on Plasma Science & Technology at IIT Tirupati. [Conference leadership](service.qmd#conference-organization) · [Official archive](https://iittpplasma2025.vercel.app/).
+
+:::

@@ -1,0 +1,21 @@
+---
+title: "Curriculum vitae"
+subtitle: "Academic record \u00b7 October 2026."
+toc: false
+---
+
+[Download my CV (PDF)](assets/Reetesh-Gangwar-CV.pdf){.btn .btn-primary}
+
+## Explore the academic record
+
+- [Academic appointments, education, and honours](about.qmd)
+- [Research interests](research.qmd)
+- [Publications and patents](publications.qmd)
+- [Sponsored research and consultancy](projects.qmd)
+- [Teaching](teaching.qmd)
+- [Research supervision](group.qmd)
+- [Professional service and leadership](service.qmd)
+- [Invited talks, lectures, and tutorials](talks.qmd)
+
+Updated October 2026.
+
