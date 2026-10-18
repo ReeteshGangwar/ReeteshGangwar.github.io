@@ -1,6 +1,6 @@
 ::: {.news-updates}
 
-### Quantum machine learning research
+### Quantum Algorithms for PDE Solvers
 
 **2026–2029 project** · Co-investigator on a DST National Quantum Mission project on reservoir computing and PDE solvers. [Project details](projects.qmd)
 
