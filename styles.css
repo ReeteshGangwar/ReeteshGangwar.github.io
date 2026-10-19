@@ -81,3 +81,38 @@ main p,.research-grid article p,.record-body p,.publication-entry p{max-width:no
 .research-grid article p,.home-lower section p{width:100%}
 .record-body:has(.member-photo) p{margin-left:0}
 main p a:not(.btn):not(.primary-link){display:inline;white-space:normal}
+
+/* Screenshot corrections: remove the empty homepage heading and unused left rail. */
+#title-block-header:empty{display:none}
+#quarto-content>main{padding-top:16px}
+.home-hero{margin-top:12px}
+@media(min-width:992px){
+  #quarto-content>main{grid-column:screen-start-inset / body-end;width:auto}
+  #quarto-content.page-layout-full>main{grid-column:screen-start-inset / screen-end-inset}
+}
+
+/* Larger marks, with the first tab and every dropdown anchored to the left. */
+.navbar-brand-logo .navbar-logo{height:66px;max-height:66px;width:auto}
+.ppl-navbar-logo{width:149px;height:72px}
+.navbar .navbar-collapse{justify-content:flex-start}
+.navbar .navbar-nav{margin-left:0;padding-left:0;text-align:left}
+.navbar .dropdown-menu{min-width:250px;max-width:min(360px,calc(100vw - 48px));padding:6px 0;text-align:left}
+.navbar .dropdown-item{padding:10px 16px;line-height:1.5;text-align:left}
+.navbar .dropdown-text{display:block;text-align:left;white-space:normal}
+@media(min-width:1200px){
+  .navbar .navbar-container{margin-left:0;margin-right:auto;column-gap:24px}
+  .navbar .navbar-collapse{flex-grow:1}
+  .navbar .dropdown-menu{left:0;right:auto}
+}
+@media(max-width:1199px){
+  .navbar .navbar-collapse .navbar-nav{align-items:stretch}
+  .navbar .dropdown-menu{margin-left:8px;min-width:0;width:calc(100% - 8px)}
+}
+@media(max-width:767px){
+  .navbar-brand-logo .navbar-logo{width:76px;height:auto;max-height:58px}
+  .ppl-navbar-logo{width:118px;height:57px}
+}
+@media(max-width:479px){
+  .navbar-brand-logo .navbar-logo{width:64px;max-height:50px}
+  .ppl-navbar-logo{width:103px;height:50px}
+}
