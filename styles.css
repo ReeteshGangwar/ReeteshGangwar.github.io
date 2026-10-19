@@ -87,8 +87,8 @@ main p a:not(.btn):not(.primary-link){display:inline;white-space:normal}
 #quarto-content>main{padding-top:16px}
 .home-hero{margin-top:12px}
 @media(min-width:992px){
-  #quarto-content>main{grid-column:screen-start-inset / body-end;width:auto}
-  #quarto-content.page-layout-full>main{grid-column:screen-start-inset / screen-end-inset}
+  #quarto-content>main{grid-column:screen-start-inset / body-end;width:auto;padding-left:clamp(16px,2vw,32px)}
+  #quarto-content.page-layout-full>main{grid-column:screen-start-inset / screen-end-inset;padding-right:clamp(16px,2vw,32px)}
 }
 
 /* Larger marks, with the first tab and every dropdown anchored to the left. */
