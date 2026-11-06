@@ -24,8 +24,19 @@ Journal: Separation and Purification Technology
 Year: 2026
 DOI: 10.1016/j.seppur.2026.140781
 Category: Journal
-Announce: No
+Announce: Yes
+Date: 2026-11-06
+Details: Our new paper on a falling-film nonthermal plasma and UV-photon hybrid system for rapid dye degradation has been published in Separation and Purification Technology.
 ```
+```update
+Type: News
+ID: psst-editorial-board-announcement-2026
+Title: Editorial Board appointment at Plasma Sources Science and Technology
+Date: 2026-11-06
+Details: Appointed Editorial Board Member of Plasma Sources Science and Technology (IOP Publishing), effective October 2026.
+URL: https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/
+```
+
 
 ```update
 Type: Page
