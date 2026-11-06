@@ -15,6 +15,26 @@ Your existing website content is preserved separately; updates are applied to it
 
 <!-- Paste your completed update blocks below this line. -->
 
+```update
+Type: Publication
+ID: falling-film-plasma-uv-2026
+Title: Synergistic falling film nonthermal plasma and UV-photon hybrid system: An advanced and energy-efficient approach for rapid dye degradation
+Authors: T. Pushparaj Gandhi, Somya Pal, Sriramulu Maniteja, Reetesh Kumar Gangwar and Shihabudheen M. Maliyekkal
+Journal: Separation and Purification Technology
+Year: 2026
+DOI: 10.1016/j.seppur.2026.140781
+Category: Journal
+Announce: No
+```
+
+```update
+Type: Page
+ID: psst-editorial-board-2026
+Page: service
+Find: **Guest Editor**, *IEEE Transactions on Plasma Science*, Special Issue on the 40th PSSI National Symposium on Plasma Science and Technology (PLASMA 2025) – [view special issue](https://ieeexplore.ieee.org/document/11349678)
+Replace: **Editorial Board Member**, *Plasma Sources Science and Technology* (IOP Publishing), October 2026–present – [editorial board](https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/). Also serving as **Guest Editor**, *IEEE Transactions on Plasma Science*, Special Issue on the 40th PSSI National Symposium on Plasma Science and Technology (PLASMA 2025) – [view special issue](https://ieeexplore.ieee.org/document/11349678)
+```
+
 ## Examples — copy only the one you need
 
 ### News (homepage and full news archive)
