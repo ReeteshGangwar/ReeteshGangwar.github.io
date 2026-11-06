@@ -10,7 +10,13 @@ class Updates(unittest.TestCase):
  def compile(self,text):return compile_pages(self.base,parse_updates(text))
  def block(self,body):return '```update\n'+body+'\n```\n'
  def test_instruction_examples_are_not_published(self):
-  self.assertEqual(parse_updates((ROOT/'UPDATE-WEBSITE.md').read_text()),[])
+  document=(ROOT/'UPDATE-WEBSITE.md').read_text()
+  examples=document.split('## Examples',1)[1]
+  self.assertIn('```example',examples)
+  self.assertEqual(parse_updates(examples),[])
+  pages=self.compile(document)
+  self.assertNotIn('Your announcement title',pages['_news-archive'])
+  self.assertNotIn('Full paper title',pages['publications'])
  def test_publication_routes_to_new_year_and_optional_news(self):
   pages=self.compile(self.block('Type: Publication\nTitle: TEST-ONLY plasma paper\nAuthors: A. Author\nJournal: Test Journal\nYear: 2027\nDOI: 10.1234/test\nAnnounce: Yes\nDate: 2027-02-15'))
   self.assertIn('## Journal Articles – 2027',pages['publications'])
