@@ -55,6 +55,17 @@ toc: true
 
 ## Service to the Scientific Community
 
+
+
+::: {.record-row}
+::: {.record-label}
+10/2026 – present
+:::
+::: {.record-body}
+**Editorial Board Member, Plasma Sources Science and Technology** — IOP Publishing [Details](https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/)
+:::
+:::
+
 ::: {.record-row}
 ::: {.record-label}
 Editorial

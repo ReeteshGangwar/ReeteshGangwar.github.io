@@ -19,7 +19,7 @@ Your existing website content is preserved separately; updates are applied to it
 Type: Publication
 ID: falling-film-plasma-uv-2026
 Title: Synergistic falling film nonthermal plasma and UV-photon hybrid system: An advanced and energy-efficient approach for rapid dye degradation
-Authors: T. Pushparaj Gandhi, Somya Pal, Sriramulu Maniteja, Reetesh Kumar Gangwar and Shihabudheen M. Maliyekkal
+Authors: T. Pushparaj Gandhi, S. Pal, S. Maniteja, R. K. Gangwar and S. M. Maliyekkal
 Journal: Separation and Purification Technology
 Year: 2026
 DOI: 10.1016/j.seppur.2026.140781
@@ -28,6 +28,7 @@ Announce: Yes
 Date: 2026-11-06
 Details: Our new paper on a falling-film nonthermal plasma and UV-photon hybrid system for rapid dye degradation has been published in Separation and Purification Technology.
 ```
+
 ```update
 Type: News
 ID: psst-editorial-board-announcement-2026
@@ -37,13 +38,15 @@ Details: Appointed Editorial Board Member of Plasma Sources Science and Technolo
 URL: https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/
 ```
 
-
 ```update
-Type: Page
+Type: Service
 ID: psst-editorial-board-2026
-Page: service
-Find: **Guest Editor**, *IEEE Transactions on Plasma Science*, Special Issue on the 40th PSSI National Symposium on Plasma Science and Technology (PLASMA 2025) – [view special issue](https://ieeexplore.ieee.org/document/11349678)
-Replace: **Editorial Board Member**, *Plasma Sources Science and Technology* (IOP Publishing), October 2026–present – [editorial board](https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/). Also serving as **Guest Editor**, *IEEE Transactions on Plasma Science*, Special Issue on the 40th PSSI National Symposium on Plasma Science and Technology (PLASMA 2025) – [view special issue](https://ieeexplore.ieee.org/document/11349678)
+Title: Editorial Board Member, Plasma Sources Science and Technology
+Period: 10/2026 – present
+Details: IOP Publishing
+Section: Service to the Scientific Community
+URL: https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/
+Announce: No
 ```
 
 ## Examples — copy only the one you need
@@ -78,7 +81,7 @@ Details: A brief description for the news announcement.
 
 Category: `Journal`, `Preprint`, `Chapter`, or `Patent`.
 Use `URL: https://...` instead of DOI when appropriate. DOI and URL are optional.
-Use `Announce: No` to update only Publications; Date is then optional.
+Use `Announce: No` to update Publications and the CV without News; Date is then optional.
 For patents, Journal can identify the patent office or disclosure record.
 
 ### Student or researcher (Group page)
@@ -167,6 +170,22 @@ Text: Write the complete replacement research introduction here.
 Field: `research-introduction` for Home, or `biography` for About.
 This replaces that paragraph; it does not append another one.
 
+### Appointment or professional service (Service page and CV)
+
+```example
+Type: Service
+Title: Editorial Board Member, Plasma Sources Science and Technology
+Period: October 2026–present
+Details: IOP Publishing
+Section: Service to the Scientific Community
+Announce: Yes
+Date: 2026-11-07
+```
+
+Use a stable, specific Title. Section can also be
+`Administrative Responsibilities at IIT Tirupati` or `Conference organization`.
+URL is optional. Announce: Yes requires Date.
+
 ### Any other wording on a page
 
 ```example
@@ -190,10 +209,18 @@ For a substantial redesign, ask for a layout change rather than using this form.
 - Optional `ID: my-stable-id` lets a later complete block supersede another
   active block with the same ID and Type.
 - `Announce: Yes` plus a Date creates a matching homepage/news announcement for
-  Publication, Student, Talk, Project or Award updates. The news links to its page.
+  Publication, Student, Talk, Project, Award or Service updates. The news links to its page.
 - Required fields, dates, photo paths and link formats are checked. Invalid
   updates stop the build; the previous successful live site stays available.
 - Saving a file only on your Mac does not upload it. Commit the update on GitHub,
   or push your local changes. The live workflow begins only after GitHub setup.
-- The downloadable PDF CV remains a separate supplied file. This workflow
-  updates the website; it does not yet regenerate or modify the PDF CV.
+- Publication, Student, Talk, Project, Teaching, Award and Service records update
+  both their website page and the downloadable PDF CV. Announce controls News only.
+- News, Profile and Page updates affect the website only. Use Service for
+  appointments that should also update the CV.
+- The website CV uses the newer brief v2 layout in `_content/cv-v2/` and applies active
+  records. Keep active blocks to retain their changes.
+- The detailed v1 CV remains a separate local personal document.
+- Project changes hide the old manually calculated aggregate funding totals;
+  individual project amounts remain available.
+- CV compilation errors stop publication, preserving the last successful site.

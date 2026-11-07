@@ -1,5 +1,13 @@
 ::: {.news-updates}
 
+### Editorial Board appointment at Plasma Sources Science and Technology
+
+**6 November 2026** · Appointed Editorial Board Member of Plasma Sources Science and Technology (IOP Publishing), effective October 2026. [Read more](https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/)
+
+### New publication: Synergistic falling film nonthermal plasma and UV-photon hybrid system: An advanced and energy-efficient approach for rapid dye degradation
+
+**6 November 2026** · Our new paper on a falling-film nonthermal plasma and UV-photon hybrid system for rapid dye degradation has been published in Separation and Purification Technology. [Read more](publications.qmd)
+
 ### Keynote on atmospheric-pressure plasma
 
 **2 April 2026** · Keynote address on “Atmospheric pressure plasma: A sustainable platform for next-generation technologies” at KL University.

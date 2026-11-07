@@ -26,18 +26,34 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: '1.10.19'
+      - name: Prepare CV sources from shared updates
+        run: python3 scripts/build_cv.py --sources-only
+      - name: Compile CV with pdfLaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: cv-generated.tex
+          working_directory: archive/cv-build
+          texlive_version: 2025
+      - name: Install the validated CV PDF
+        run: python3 scripts/build_cv.py --install-precompiled
       - name: Validate updates, build pages, and check local links
         run: quarto render
+      - name: Keep CV preview for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV-preview
+          path: assets/Reetesh-Gangwar-CV.pdf
+          if-no-files-found: error
       - name: Prepare GitHub Pages
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5
       - name: Upload built website only
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     permissions:

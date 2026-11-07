@@ -8,6 +8,11 @@ Journal articles, preprints, book chapters, and patent disclosures from **2024�
 
 ## Journal Articles – 2026
 
+
+::: {.publication-entry}
+T. Pushparaj Gandhi, S. Pal, S. Maniteja, R. K. Gangwar and S. M. Maliyekkal. “Synergistic falling film nonthermal plasma and UV-photon hybrid system: An advanced and energy-efficient approach for rapid dye degradation.” *Separation and Purification Technology* (2026). [Read publication](https://doi.org/10.1016/j.seppur.2026.140781) Our new paper on a falling-film nonthermal plasma and UV-photon hybrid system for rapid dye degradation has been published in Separation and Purification Technology.
+:::
+
 ::: {.publication-entry}
 S. B. Thota, P. S. N. S. R. Srikar, S. Mathengattil, S. M. Maliyekkal and **R. K. Gangwar**, “Phase-resolved optical diagnostics of waveform-modulated Ar nonthermal atmospheric pressure plasma jet”, *Spectrochimica Acta Part B: Atomic Spectroscopy*, 107649 (2026). [Publisher link](https://www.sciencedirect.com/science/article/pii/S0584854726002004)
 :::

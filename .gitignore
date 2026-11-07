@@ -1,0 +1,12 @@
+_site/
+.quarto/
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+*.tmp
+
+/.quarto/
+**/*.quarto_ipynb
+
+archive/cv-build/

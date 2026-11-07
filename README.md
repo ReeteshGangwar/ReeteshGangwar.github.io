@@ -39,8 +39,10 @@ identify entries that should be replaced, avoiding duplicate entries.
 
 This uses explicit fields rather than guessing the meaning of arbitrary text.
 Photos must be uploaded inside `assets/` first; their path can then be used in a
-Student entry. The provided PDF CV remains a separate file and is not regenerated
-by this website update workflow.
+Student entry. The downloadable brief v2 CV is rebuilt from `_content/cv-v2/` and active structured
+updates. News, Profile and Page records affect the website only; use Service for
+appointments shared with the CV. See `_content/cv-v2/README.md`.
+The detailed v1 CV is maintained separately as a local personal copy.
 
 ## Initial GitHub Pages setup
 
