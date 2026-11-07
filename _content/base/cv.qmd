@@ -1,10 +1,10 @@
 ---
 title: "Curriculum vitae"
-subtitle: "Academic record \u00b7 October 2026."
+subtitle: "Brief academic CV (v2) · Rebuilt with each successful website publication."
 toc: false
 ---
 
-[Download my CV (PDF)](assets/Reetesh-Gangwar-CV.pdf){.btn .btn-primary}
+[Download my brief CV (PDF)](assets/Reetesh-Gangwar-CV.pdf){.btn .btn-primary}
 
 ## Explore the academic record
 
@@ -17,5 +17,5 @@ toc: false
 - [Professional service and leadership](service.qmd)
 - [Invited talks, lectures, and tutorials](talks.qmd)
 
-Updated October 2026.
+The PDF combines the CV baseline with active structured website updates.
 

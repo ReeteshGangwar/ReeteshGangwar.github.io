@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ROW = re.compile(r'::: \{\.record-row\}\s*\n::: \{\.record-label\}\n(.*?)\n:::\s*\n::: \{\.record-body\}\n(.*?)\n:::\s*\n:::', re.S)
 PUB = re.compile(r'::: \{\.publication-entry\}\n(.*?)\n:::', re.S)
 FIELDS = {
+ 'service': {'title','details','period','section','url','announce','date','id','action'},
  'news': {'title','date','details','url','id','action'},
  'publication': {'title','authors','journal','year','doi','url','details','category','announce','date','id','action'},
  'student': {'name','programme','status','topic','year','endyear','photo','position','details','announce','date','id','action'},
@@ -21,7 +22,7 @@ FIELDS = {
  'profile': {'field','text','id'},
  'page': {'page','find','replace','id'},
 }
-REQUIRED = {'news':['title','date','details'], 'publication':['title','authors','journal','year'],
+REQUIRED = {'service':['title','details','period'], 'news':['title','date','details'], 'publication':['title','authors','journal','year'],
  'student':['name','programme','status','topic'], 'talk':['title','date','event'],
  'project':['title','agency','role','year','status'], 'teaching':['code','title','level','semesters'],
  'award':['title','year','details'], 'profile':['field','text'], 'page':['page','find','replace']}
@@ -159,7 +160,7 @@ def compile_pages(base,records,root=ROOT):
    if pages[name].count(r['find'])!=1:raise ValueError('Page Find must match exactly once. No pages have been written.')
    pages[name]=pages[name].replace(r['find'],r['replace'],1);continue
   if remove:
-   targets={'publication':'publications','student':'group','talk':'talks','project':'projects','teaching':'teaching','award':'about'}
+   targets={'publication':'publications','student':'group','talk':'talks','project':'projects','teaching':'teaching','award':'about','service':'service'}
    target=targets[k];needle=r[REQUIRED[k][0]]
    pages[target],found=find_remove(pages[target],needle,PUB if k=='publication' else ROW)
    if not found:raise ValueError('Cannot remove an entry that was not found: '+needle)
@@ -210,6 +211,13 @@ def compile_pages(base,records,root=ROOT):
    if level not in ('undergraduate','postgraduate'):raise ValueError('Teaching Level must be Undergraduate or Postgraduate.')
    section='Undergraduate Courses' if level=='undergraduate' else 'Postgraduate and Ph.D. Courses'
    entry=row(r['code'],'**'+P('title')+'** — '+P('semesters')+(' — '+P('details') if r.get('details') else ''))
+  elif k=='service':
+   target='service';section=r.get('section','Service to the Scientific Community')
+   if section not in {'Service to the Scientific Community','Administrative Responsibilities at IIT Tirupati','Conference organization'}:raise ValueError('Unsupported Service section.')
+   pages[target],found=find_remove(pages[target],r['title'])
+   body='**'+P('title')+'** — '+P('details')
+   if r.get('url'):body+=' [Details]('+r['url']+')'
+   entry=row(r['period'],body)
   elif k=='award':
    target='about';section='Fellowships and honours';pages[target],found=find_remove(pages[target],r['title']);entry=row(r.get('year',''),'**'+P('title')+'** — '+P('details'))
   if remove:
@@ -226,7 +234,7 @@ def compile_pages(base,records,root=ROOT):
    else:pages[target]=insert_section(page,section,entry)
   else:pages[target]=insert_section(pages[target],section,entry)
   if r.get('announce','no').lower()=='yes':
-   title=r.get('title',r.get('name',r.get('code','')));prefix={'publication':'New publication','student':'Research group update','talk':'Talk','project':'Research project','award':'Recognition'}.get(k,'Update')
+   title=r.get('title',r.get('name',r.get('code','')));prefix={'publication':'New publication','student':'Research group update','talk':'Talk','project':'Research project','award':'Recognition','service':'Professional service'}.get(k,'Update')
    news_title=prefix+': '+title;news=[(n,b) for n,b in news if norm(n)!=norm(news_title)]
    news.insert(0,(news_title,news_item(news_title,dated(r),r.get('details') or r.get('topic') or title,target+'.qmd')))
  # Sort dated announcements so new records land in chronological order.
@@ -248,6 +256,8 @@ def compile_pages(base,records,root=ROOT):
 def build(root=ROOT):
  root=Path(root);base={f.stem:f.read_text() for f in (root/'_content/base').glob('*.qmd')}
  records=parse_updates((root/'UPDATE-WEBSITE.md').read_text());pages=compile_pages(base,records,root)
+ from build_cv import build as build_cv
+ build_cv(root=root)
  for name,text in pages.items():(root/(name+'.qmd')).write_text(text)
  print(f'Website updates: validated {len(records)} active entries; generated {len(pages)} source files.')
  return pages

@@ -1,0 +1,68 @@
+%% settings.sty -- layout and styling for Dr. Reetesh Kumar Gangwar's CV
+%% Based on LianTze Lim's curve template (2022); cleaned Oct 2026:
+%% biblatex/bibliography code removed (publications are typed by hand).
+
+\RequirePackage{silence}
+\WarningsOff[longtable]
+\WarningsOff[array]
+
+\RequirePackage{graphicx}
+\RequirePackage[hyphens]{url}
+\RequirePackage{babel}
+\RequirePackage[fixed]{fontawesome5}
+\RequirePackage[a4paper,nohead,hmargin=1.8cm,top=1.2cm,bottom=1.5cm,footskip=0.8cm]{geometry}
+\RequirePackage{relsize}
+\RequirePackage[dvipsnames,svgnames]{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{array}
+\RequirePackage{comment}
+
+\definecolor{SwishLineColour}{HTML}{88AC0B}
+\definecolor{MarkerColour}{HTML}{B6073F}
+
+\raggedright
+
+%% Page numbers "Page x of y" in the footer
+\RequirePackage{lastpage}
+
+%% ---------- Section (rubric) headings ----------
+\headerscale{1}
+\rubricfont{\Large\bfseries\sffamily}
+\setlength{\rubricspace}{2pt}
+\setlength{\rubricafterspace}{-3pt}
+\setlength{\subrubricspace}{3pt}
+\setlength{\subrubricbeforespace}{3pt}
+\def\@@rubrichead#1{%
+  \begin{tikzpicture}[baseline]%
+  \shade[left color=SwishLineColour!60!white, right color=white] rectangle (\@almosttextwidth,2.5pt);
+  \node[font={\@rubricfont},inner sep=0pt,text ragged,anchor=south west,text depth=.5ex,text height=1.5ex] at (1pt,2pt) {#1};
+  \end{tikzpicture}%
+  \vspace\rubricspace%
+}
+\subrubricfont{\large\bfseries\sffamily\color{MarkerColour!80!black}}
+\subrubricalignment{l}
+
+\newcommand{\makefield}[2]{\makebox[1.5em]{\color{MarkerColour!80!black}#1} #2\hspace{2em}}
+
+\keyalignment{r}
+\rubricalignment{l}
+\renewcommand{\arraystretch}{1.2}
+\urlstyle{tt}
+
+\newcommand{\prefixmarker}[1]{\def\@prefixmarker{#1}}
+\def\@prefixmarker{\relscale{.9}\faBookmark}
+\prefix{%
+  \hspace*{-1ex}%
+  \color{MarkerColour!80!black}\@prefixmarker%
+  \hspace*{1ex}%
+}
+
+\newcommand{\makerubrichead}[1]{\vskip\baselineskip\@@rubrichead{#1}}
+
+%% Small helpers
+\newcommand{\me}[1]{\textbf{#1}}                    % highlight own name
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\textcolor{MarkerColour}{\scriptsize\faLink}\,\textcolor{MarkerColour}{doi:#1}}}
+\newcommand{\artlink}[1]{\href{#1}{\textcolor{MarkerColour}{\scriptsize\faLink}\,\textcolor{MarkerColour}{article}}}
+\newcommand{\status}[1]{\textcolor{MarkerColour!80!black}{\textsf{\small #1}}}
+
+\RequirePackage[colorlinks=true,allcolors=black,breaklinks=true]{hyperref}
