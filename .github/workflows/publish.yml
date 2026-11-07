@@ -26,11 +26,16 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: '1.10.19'
-      - name: Set up CV compiler
-        uses: wtfjoke/setup-tectonic@v4
+      - name: Prepare CV sources from shared updates
+        run: python3 scripts/build_cv.py --sources-only
+      - name: Compile CV with pdfLaTeX
+        uses: xu-cheng/latex-action@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          tectonic-version: '0.17.0'
+          root_file: cv-llt.tex
+          working_directory: archive/cv-build
+          texlive_version: 2025
+      - name: Install the validated CV PDF
+        run: python3 scripts/build_cv.py --install-precompiled
       - name: Validate updates, build pages, and check local links
         run: quarto render
       - name: Keep CV preview for review
