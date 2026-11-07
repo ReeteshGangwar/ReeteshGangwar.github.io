@@ -2,9 +2,12 @@
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 from build_updates import ROOT, parse_updates, compile_pages, build, ROW
 
 class Updates(unittest.TestCase):
+ def setUp(self):
+  compiler=patch('build_cv.build');compiler.start();self.addCleanup(compiler.stop)
  @classmethod
  def setUpClass(cls):cls.base={f.stem:f.read_text() for f in (ROOT/'_content/base').glob('*.qmd')}
  def compile(self,text):return compile_pages(self.base,parse_updates(text))
