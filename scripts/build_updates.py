@@ -171,8 +171,10 @@ def compile_pages(base,records,root=ROOT):
    if category not in categories:raise ValueError('Publication Category: Journal, Preprint, Chapter, or Patent.')
    section=categories[category];pages[target],found=find_remove(pages[target],r['title'],PUB)
    link=('https://doi.org/'+r['doi']) if r.get('doi') else r.get('url','')
-   body=P('authors')+'. “'+P('title')+'.” *'+P('journal')+'* ('+P('year')+').'+((' [Read publication]('+link+')') if link else '')
-   if r.get('details'):body+=' '+P('details')
+   # Match the existing list style: bold own name, comma-separated, no announcement text.
+   authors=re.sub(r'\b(?:R\.\s*K\.|Reetesh\s+Kumar|Reetesh)\s+Gangwar\b','**R. K. Gangwar**',P('authors'))
+   label='DOI' if r.get('doi') else 'Publisher link'
+   body=authors+', “'+P('title')+'”, *'+P('journal')+'* ('+P('year')+').'+((' ['+label+']('+link+')') if link else '')
    entry='::: {.publication-entry}\n'+body+'\n:::\n'
   elif k=='student':
    target='group';programme=r.get('programme','PhD').lower().replace('.','').replace(' ','');status=r.get('status','current').lower()

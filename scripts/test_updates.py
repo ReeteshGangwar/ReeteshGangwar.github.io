@@ -28,9 +28,13 @@ class Updates(unittest.TestCase):
   self.assertIn('https://doi.org/10.1234/test',pages['publications'])
  def test_same_publication_is_not_duplicated(self):
   one='Type: Publication\nTitle: TEST-ONLY same paper\nAuthors: A. Author\nJournal: Journal\nYear: 2027'
-  pages=self.compile(self.block(one)+self.block(one+'\nDetails: Revised details'))
+  pages=self.compile(self.block(one)+self.block(one.replace('Journal: Journal','Journal: Revised Journal')))
   self.assertEqual(pages['publications'].count('TEST-ONLY same paper'),1)
-  self.assertIn('Revised details',pages['publications'])
+  self.assertIn('*Revised Journal*',pages['publications'])
+ def test_publication_matches_existing_style(self):
+  pages=self.compile(self.block('Type: Publication\nTitle: TEST-ONLY styled paper\nAuthors: A. Student and Reetesh Kumar Gangwar\nJournal: Test Journal\nYear: 2027\nDOI: 10.1234/style\nDetails: TEST-ONLY announcement sentence'))
+  self.assertIn('A. Student and **R. K. Gangwar**, “TEST-ONLY styled paper”, *Test Journal* (2027). [DOI](https://doi.org/10.1234/style)',pages['publications'])
+  self.assertNotIn('TEST-ONLY announcement sentence',pages['publications'])
  def test_current_student_moves_to_alumni(self):
   pages=self.compile(self.block('Type: Student\nName: Abhay Kumar\nProgramme: PhD\nStatus: Alumni\nTopic: Plasma-based wastewater treatment\nYear: 2024\nEndYear: 2027\nPosition: TEST-ONLY next position'))
   name_at=pages['group'].index('**Abhay Kumar**')

@@ -104,7 +104,8 @@ def compile_sections(base, records):
             heading = {'journal': 'Journal Articles -- ' + r.get('year', ''),
                        'preprint': 'Preprints (arXiv)', 'chapter': 'Book Chapter -- ' + r.get('year', ''),
                        'patent': 'Patents'}[category]
-            body = p('authors') + ", ``" + p('title') + "'', " + r'\emph{' + p('journal') + '} (' + p('year') + ').'
+            authors = re.sub(r'\b(?:R\.\s*K\.|Reetesh\s+Kumar|Reetesh)\s+Gangwar\b', r'\\textbf{R. K. Gangwar}', p('authors'))
+            body = authors + ", ``" + p('title') + "'', " + r'\emph{' + p('journal') + '} (' + p('year') + ').'
             if r.get('doi'):
                 body += r' \doi{' + p('doi') + '}'
             elif r.get('url'):
@@ -150,7 +151,7 @@ def compile_sections(base, records):
             label = r.get('period', r.get('date', ''))
             body = r'\textbf{' + p('title') + '} -- ' + p('details')
             if r.get('url'):
-                body += r' \artlink{' + p('url') + '}'
+                body += r' \href{' + p('url') + r'}{\textcolor{MarkerColour}{link}}'
         else:
             raise ValueError('Unsupported CV type: ' + kind)
         updated, found = remove_entry(sections[section], title, scope)
