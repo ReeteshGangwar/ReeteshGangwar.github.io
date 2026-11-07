@@ -18,6 +18,8 @@ SECTIONS = ('research-interests', 'education', 'experience', 'awards',
             'projects', 'publications', 'teaching', 'scholars', 'activities',
             'service', 'memberships')
 ENTRY = re.compile(r'\\entry\*\[.*?(?=\\entry\*\[|\\subrubric\{|\\end\{rubric\})', re.S)
+MAIN_TEX = 'cv-generated.tex'
+MAIN_PDF = 'cv-generated.pdf'
 
 
 def tex(value):
@@ -164,24 +166,31 @@ def compile_sections(base, records):
     return sections
 
 
-def build(root=ROOT, source=None, work=None, compile_pdf=True, destination=None, install_precompiled=False):
+def build(root=ROOT, source=None, work=None, compile_pdf=True, destination=None, install_precompiled=False, updates_document=None):
     root = Path(root)
-    source = Path(source) if source else root / '_content/cv'
+    source = Path(source) if source else root / '_content/cv-v2'
     work = Path(work) if work else root / 'archive/cv-build'
-    records = parse_updates((root / 'UPDATE-WEBSITE.md').read_text())
+    records = parse_updates(updates_document if updates_document is not None else (root / 'UPDATE-WEBSITE.md').read_text())
     # Standalone CV builds enforce the same categories, sections and asset paths
     # as website builds before any output file is written.
     compile_pages({p.stem: p.read_text() for p in (root / '_content/base').glob('*.qmd')}, records, root)
-    base = {name: (source / (name + '.tex')).read_text() for name in SECTIONS}
-    sections = compile_sections(base, records)
-    files = {name + '.tex': text.encode() for name, text in sections.items()}
-    files.update({name: (source / name).read_bytes() for name in ('cv-llt.tex', 'settings.sty', 'photo.jpg')})
+    if (source / 'cv-v2.tex').is_file():
+        from build_cv_v2 import compile_v2
+        files = {MAIN_TEX: compile_v2((source / 'cv-v2.tex').read_text(), records).encode(),
+                 'photo.jpg': (source / 'photo.jpg').read_bytes()}
+    else:
+        base = {name: (source / (name + '.tex')).read_text() for name in SECTIONS}
+        sections = compile_sections(base, records)
+        files = {name + '.tex': text.encode() for name, text in sections.items()}
+        files.update({MAIN_TEX: (source / 'cv-llt.tex').read_bytes(),
+                      'settings.sty': (source / 'settings.sty').read_bytes(),
+                      'photo.jpg': (source / 'photo.jpg').read_bytes()})
     digest = hashlib.sha256()
     for name, content in sorted(files.items()):
         digest.update(name.encode() + b'\0' + content + b'\0')
     fingerprint = digest.hexdigest()
     work.mkdir(parents=True, exist_ok=True)
-    pdf = work / 'cv-llt.pdf'
+    pdf = work / MAIN_PDF
     verified = work / 'compiled-source.sha256'
     prepared = work / 'prepared-source.sha256'
     cached = verified.is_file() and verified.read_text().strip() == fingerprint and pdf.is_file()
@@ -202,7 +211,7 @@ def build(root=ROOT, source=None, work=None, compile_pdf=True, destination=None,
         if not executable:
             raise ValueError('latexmk/pdfLaTeX is required locally; GitHub Actions provides the TeX Live compiler automatically.')
         subprocess.run([executable, '-pdf', '-file-line-error', '-halt-on-error',
-                        '-interaction=nonstopmode', '-no-shell-escape', 'cv-llt.tex'], cwd=work, check=True)
+                        '-interaction=nonstopmode', '-no-shell-escape', MAIN_TEX], cwd=work, check=True)
     if not pdf.is_file() or not pdf.read_bytes().startswith(b'%PDF-'):
         raise ValueError('Compiler did not produce a valid CV PDF.')
     verified.write_text(fingerprint + '\n')
@@ -222,12 +231,14 @@ if __name__ == '__main__':
     parser.add_argument('--destination', type=Path)
     parser.add_argument('--sources-only', action='store_true')
     parser.add_argument('--install-precompiled', action='store_true')
+    parser.add_argument('--updates', type=Path, help='Read updates from an alternative local document.')
     args = parser.parse_args()
     try:
         if args.sources_only and args.install_precompiled:
             parser.error('--sources-only and --install-precompiled cannot be combined')
         build(source=args.source, work=args.work, destination=args.destination,
-              compile_pdf=not args.sources_only, install_precompiled=args.install_precompiled)
+              compile_pdf=not args.sources_only, install_precompiled=args.install_precompiled,
+              updates_document=args.updates.read_text() if args.updates else None)
     except (ValueError, KeyError, OSError, subprocess.CalledProcessError) as error:
         print('CV BUILD ERROR: ' + str(error), file=sys.stderr)
         sys.exit(1)

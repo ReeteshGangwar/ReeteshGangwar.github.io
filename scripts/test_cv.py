@@ -4,7 +4,7 @@ from pathlib import Path
 import tempfile
 import subprocess
 from unittest.mock import patch
-from build_cv import ROOT, build, compile_sections, remove_entry, tex
+from build_cv import ROOT, MAIN_TEX, MAIN_PDF, build, compile_sections, remove_entry, tex
 
 
 def section(name, content=''):
@@ -88,8 +88,8 @@ class CVTests(unittest.TestCase):
             served = Path(folder) / 'existing.pdf'
             served.write_bytes(b'%PDF-original')
             build(work=work, compile_pdf=False)
-            (work / 'publications.tex').write_text('changed after preparation')
-            (work / 'cv-llt.pdf').write_bytes(b'%PDF-preview')
+            (work / MAIN_TEX).write_text('changed after preparation')
+            (work / MAIN_PDF).write_bytes(b'%PDF-preview')
             with self.assertRaisesRegex(ValueError, 'sources changed'):
                 build(work=work, destination=served, install_precompiled=True)
             self.assertEqual(served.read_bytes(), b'%PDF-original')
@@ -101,16 +101,16 @@ class CVTests(unittest.TestCase):
             work = Path(folder) / 'work'
             served = Path(folder) / 'new.pdf'
             build(work=work, compile_pdf=False)
-            (work / 'cv-llt.pdf').write_bytes(b'%PDF-preview')
+            (work / MAIN_PDF).write_bytes(b'%PDF-preview')
             build(work=work, destination=served, install_precompiled=True)
             with patch('build_cv.subprocess.run', side_effect=AssertionError('Unexpected compiler call')):
                 build(work=work, destination=served)
             self.assertEqual(served.read_bytes(), b'%PDF-preview')
 
     def test_real_appointment_and_paper_are_not_duplicated(self):
-        from build_cv import SECTIONS
+        from build_cv_v2 import compile_v2
         from build_updates import parse_updates, compile_pages
-        base = {name: (ROOT / '_content/cv' / (name + '.tex')).read_text() for name in SECTIONS}
+        base = (ROOT / '_content/cv-v2/cv-v2.tex').read_text()
         records = parse_updates('''```update
 Type: Publication
 Title: Synergistic falling film nonthermal plasma and UV-photon hybrid system: An advanced and energy-efficient approach for rapid dye degradation
@@ -133,10 +133,10 @@ Date: 2026-11-06
 Details: Appointed Editorial Board Member.
 ```
 ''')
-        result = compile_sections(base, records)
-        self.assertEqual(result['service'].count('Editorial Board Member'), 1)
-        self.assertIn('Guest Editor', result['service'])
-        self.assertEqual(result['publications'].count('Synergistic falling film'), 1)
+        result = compile_v2(base, records)
+        self.assertEqual(result.count('Editorial Board Member'), 1)
+        self.assertIn('Guest Editor', result)
+        self.assertEqual(result.count('Synergistic falling film'), 1)
         pages = compile_pages({p.stem:p.read_text() for p in (ROOT / '_content/base').glob('*.qmd')}, records)
         self.assertEqual(pages['service'].count('Editorial Board Member'), 1)
         self.assertIn('Guest Editor', pages['service'])
