@@ -1,10 +1,10 @@
 ---
 title: "Curriculum vitae"
-subtitle: "Academic record · Rebuilt with each successful website publication."
+subtitle: "Brief academic CV (v2) · Rebuilt with each successful website publication."
 toc: false
 ---
 
-[Download my CV (PDF)](assets/Reetesh-Gangwar-CV.pdf){.btn .btn-primary}
+[Download my brief CV (PDF)](assets/Reetesh-Gangwar-CV.pdf){.btn .btn-primary}
 
 ## Explore the academic record
 
