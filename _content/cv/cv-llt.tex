@@ -1,0 +1,63 @@
+%% Curriculum Vitae -- Dr. Reetesh Kumar Gangwar
+%% Compile with pdfLaTeX (or XeLaTeX/LuaLaTeX):  latexmk -pdf cv-llt.tex
+%% No bibliography tool (biber/bibtex) is needed: publications are typed in publications.tex.
+%% Last updated: November 2026
+
+\documentclass[a4paper,11pt,english]{curve}
+\usepackage{settings}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+\else
+  \usepackage{fontspec}
+\fi
+\usepackage[p,osf,swashQ]{cochineal}
+\usepackage[medium,bold]{cabin}
+\usepackage[varqu,varl,scale=0.9]{zi4}
+
+\hypersetup{
+  pdftitle={Curriculum Vitae - Dr. Reetesh Kumar Gangwar},
+  pdfauthor={Reetesh Kumar Gangwar},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={plasma physics, optical diagnostics, atomic physics, machine learning, IIT Tirupati}
+}
+
+%% ---------------- Header ----------------
+\photo[r]{photo}
+\photoscale{0.28}
+
+\leftheader{%
+  {\LARGE\bfseries\sffamily Dr.\ Reetesh Kumar Gangwar}\par\smallskip
+  {\large Associate Professor, Department of Physics}\par
+  Indian Institute of Technology Tirupati\par
+  Office AB2-313, Tirupati 517619, Andhra Pradesh, India\par\medskip
+  \makefield{\faEnvelope[regular]}{\href{mailto:reetesh@iittp.ac.in}{\texttt{reetesh@iittp.ac.in}}}\\
+  \makefield{\faPhone}{+91 87725 03457}\\
+  \makefield{\faUser}{\url{https://reeteshgangwar.github.io}}\\
+  \makefield{\faGlobe}{\url{https://www.ppliittp.com}}\\
+  \makefield{\faGraduationCap}{%
+    \href{https://scholar.google.co.in/citations?user=r6HvPAsAAAAJ&hl=en}{Google Scholar}%
+    \;|\; \faLinkedin\ \href{https://in.linkedin.com/in/plasma-processing-lab-1ab976378}{LinkedIn}%
+    \;|\; \faResearchgate\ \href{https://www.researchgate.net/profile/Reetesh-Gangwar-2}{ResearchGate}}%
+}
+\rightheader{~}
+\title{Curriculum Vitae}
+
+\begin{document}
+\pagestyle{plain}
+\makeheaders[c]
+
+\makerubric{research-interests}
+\makerubric{education}
+\makerubric{experience}
+\makerubric{awards}
+\makerubric{projects}
+\makerubric{publications}
+\makerubric{teaching}
+\makerubric{scholars}
+\makerubric{activities}
+\makerubric{service}
+\makerubric{memberships}
+
+\end{document}
