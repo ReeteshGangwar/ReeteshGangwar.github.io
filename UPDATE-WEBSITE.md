@@ -218,8 +218,9 @@ For a substantial redesign, ask for a layout change rather than using this form.
   both their website page and the downloadable PDF CV. Announce controls News only.
 - News, Profile and Page updates affect the website only. Use Service for
   appointments that should also update the CV.
-- The CV retains the historical content in `_content/cv/` and applies active
+- The website CV uses the newer brief v2 layout in `_content/cv-v2/` and applies active
   records. Keep active blocks to retain their changes.
+- The detailed v1 CV remains a separate local personal document.
 - Project changes hide the old manually calculated aggregate funding totals;
   individual project amounts remain available.
 - CV compilation errors stop publication, preserving the last successful site.
