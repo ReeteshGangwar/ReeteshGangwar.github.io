@@ -31,7 +31,7 @@ jobs:
       - name: Compile CV with pdfLaTeX
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: cv-llt.tex
+          root_file: cv-generated.tex
           working_directory: archive/cv-build
           texlive_version: 2025
       - name: Install the validated CV PDF
