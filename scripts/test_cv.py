@@ -52,6 +52,11 @@ class CVTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             remove_entry(section('S', '\\entry*[] A Kumar\n\\entry*[] A Kumar\n'), 'A Kumar')
 
+    def test_shared_legacy_student_table_cannot_be_removed_as_one_student(self):
+        source = section('Students', '\\entry*[] \\begin{tabular}{ll}\\textbf{Ms. Somya Pal} & Other Student\\end{tabular}\n')
+        with self.assertRaisesRegex(ValueError, 'shared student table'):
+            remove_entry(source, 'Somya Pal')
+
     def test_user_tex_is_escaped(self):
         value = tex(r'50% & x_1 $ {test} \input{secret}')
         self.assertIn(r'50\% \& x\_1 \$', value)

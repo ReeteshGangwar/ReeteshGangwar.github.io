@@ -52,6 +52,8 @@ def remove_entry(source, needle, scope=None):
     if not matches:
         return source, False
     m = matches[0]
+    if r'\begin{tabular}' in m[0]:
+        raise ValueError('This CV entry contains a shared student table. Convert that table to individual records before updating: ' + needle)
     return source[:m.start()] + source[m.end():], True
 
 
