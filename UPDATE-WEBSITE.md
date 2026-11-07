@@ -41,9 +41,9 @@ URL: https://publishingsupport.iopscience.iop.org/journals/plasma-sources-scienc
 ```update
 Type: Service
 ID: psst-editorial-board-2026
-Title: Editorial Board Member
+Title: Editorial Board Member, Plasma Sources Science and Technology
 Period: October 2026–present
-Details: Plasma Sources Science and Technology (IOP Publishing)
+Details: IOP Publishing
 Section: Service to the Scientific Community
 URL: https://publishingsupport.iopscience.iop.org/journals/plasma-sources-science-and-technology/editorial-board/
 Announce: No
@@ -81,7 +81,7 @@ Details: A brief description for the news announcement.
 
 Category: `Journal`, `Preprint`, `Chapter`, or `Patent`.
 Use `URL: https://...` instead of DOI when appropriate. DOI and URL are optional.
-Use `Announce: No` to update only Publications; Date is then optional.
+Use `Announce: No` to update Publications and the CV without News; Date is then optional.
 For patents, Journal can identify the patent office or disclosure record.
 
 ### Student or researcher (Group page)
@@ -174,9 +174,9 @@ This replaces that paragraph; it does not append another one.
 
 ```example
 Type: Service
-Title: Editorial Board Member
+Title: Editorial Board Member, Plasma Sources Science and Technology
 Period: October 2026–present
-Details: Plasma Sources Science and Technology (IOP Publishing)
+Details: IOP Publishing
 Section: Service to the Scientific Community
 Announce: Yes
 Date: 2026-11-07
