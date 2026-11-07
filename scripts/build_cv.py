@@ -6,6 +6,7 @@ PDF is replaced only after a successful compiler exit and PDF signature check.
 """
 from pathlib import Path
 import argparse
+import hashlib
 import re
 import shutil
 import subprocess
@@ -163,7 +164,7 @@ def compile_sections(base, records):
     return sections
 
 
-def build(root=ROOT, source=None, work=None, compile_pdf=True, destination=None):
+def build(root=ROOT, source=None, work=None, compile_pdf=True, destination=None, install_precompiled=False):
     root = Path(root)
     source = Path(source) if source else root / '_content/cv'
     work = Path(work) if work else root / 'archive/cv-build'
@@ -173,20 +174,38 @@ def build(root=ROOT, source=None, work=None, compile_pdf=True, destination=None)
     compile_pages({p.stem: p.read_text() for p in (root / '_content/base').glob('*.qmd')}, records, root)
     base = {name: (source / (name + '.tex')).read_text() for name in SECTIONS}
     sections = compile_sections(base, records)
+    files = {name + '.tex': text.encode() for name, text in sections.items()}
+    files.update({name: (source / name).read_bytes() for name in ('cv-llt.tex', 'settings.sty', 'photo.jpg')})
+    digest = hashlib.sha256()
+    for name, content in sorted(files.items()):
+        digest.update(name.encode() + b'\0' + content + b'\0')
+    fingerprint = digest.hexdigest()
     work.mkdir(parents=True, exist_ok=True)
-    for name in ('cv-llt.tex', 'settings.sty', 'photo.jpg'):
-        shutil.copyfile(source / name, work / name)
-    for name, text in sections.items():
-        (work / (name + '.tex')).write_text(text)
-    if not compile_pdf:
-        return work
-    executable = shutil.which('tectonic')
-    if not executable:
-        raise ValueError('Tectonic is required to build the CV PDF.')
-    subprocess.run([executable, '--untrusted', '--keep-logs', 'cv-llt.tex'], cwd=work, check=True)
     pdf = work / 'cv-llt.pdf'
+    verified = work / 'compiled-source.sha256'
+    prepared = work / 'prepared-source.sha256'
+    cached = verified.is_file() and verified.read_text().strip() == fingerprint and pdf.is_file()
+    if install_precompiled:
+        if not prepared.is_file() or prepared.read_text().strip() != fingerprint:
+            raise ValueError('Prepared CV sources do not match the current updates.')
+        if any(not (work / name).is_file() or (work / name).read_bytes() != content for name, content in files.items()):
+            raise ValueError('CV sources changed after preparation; compile again.')
+        if not pdf.is_file() or pdf.stat().st_mtime_ns < max((work / name).stat().st_mtime_ns for name in files):
+            raise ValueError('The compiled CV is missing or older than its sources.')
+    elif not (compile_pdf and cached):
+        for name, content in files.items():
+            (work / name).write_bytes(content)
+        prepared.write_text(fingerprint + '\n')
+        if not compile_pdf:
+            return work
+        executable = shutil.which('latexmk')
+        if not executable:
+            raise ValueError('latexmk/pdfLaTeX is required locally; GitHub Actions provides the TeX Live compiler automatically.')
+        subprocess.run([executable, '-pdf', '-file-line-error', '-halt-on-error',
+                        '-interaction=nonstopmode', '-no-shell-escape', 'cv-llt.tex'], cwd=work, check=True)
     if not pdf.is_file() or not pdf.read_bytes().startswith(b'%PDF-'):
         raise ValueError('Compiler did not produce a valid CV PDF.')
+    verified.write_text(fingerprint + '\n')
     destination = Path(destination) if destination else root / 'assets/Reetesh-Gangwar-CV.pdf'
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary = destination.with_suffix('.pdf.tmp')
@@ -202,9 +221,13 @@ if __name__ == '__main__':
     parser.add_argument('--work', type=Path)
     parser.add_argument('--destination', type=Path)
     parser.add_argument('--sources-only', action='store_true')
+    parser.add_argument('--install-precompiled', action='store_true')
     args = parser.parse_args()
     try:
-        build(source=args.source, work=args.work, destination=args.destination, compile_pdf=not args.sources_only)
+        if args.sources_only and args.install_precompiled:
+            parser.error('--sources-only and --install-precompiled cannot be combined')
+        build(source=args.source, work=args.work, destination=args.destination,
+              compile_pdf=not args.sources_only, install_precompiled=args.install_precompiled)
     except (ValueError, KeyError, OSError, subprocess.CalledProcessError) as error:
         print('CV BUILD ERROR: ' + str(error), file=sys.stderr)
         sys.exit(1)

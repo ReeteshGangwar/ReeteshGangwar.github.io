@@ -73,12 +73,39 @@ class CVTests(unittest.TestCase):
             folder = Path(folder)
             served = folder / 'existing.pdf'
             served.write_bytes(b'%PDF-original')
-            with patch('build_cv.shutil.which', return_value='/unused/tectonic'), patch(
-                'build_cv.subprocess.run', side_effect=subprocess.CalledProcessError(1, 'tectonic')
+            with patch('build_cv.shutil.which', return_value='/unused/latexmk'), patch(
+                'build_cv.subprocess.run', side_effect=subprocess.CalledProcessError(1, 'latexmk')
             ), self.assertRaises(subprocess.CalledProcessError):
                 build(work=folder / 'work', destination=served)
             self.assertEqual(served.read_bytes(), b'%PDF-original')
             self.assertFalse(served.with_suffix('.pdf.tmp').exists())
+
+    def test_precompiled_install_rejects_changed_sources(self):
+        archive = ROOT / 'archive'
+        archive.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=archive) as folder:
+            work = Path(folder) / 'work'
+            served = Path(folder) / 'existing.pdf'
+            served.write_bytes(b'%PDF-original')
+            build(work=work, compile_pdf=False)
+            (work / 'publications.tex').write_text('changed after preparation')
+            (work / 'cv-llt.pdf').write_bytes(b'%PDF-preview')
+            with self.assertRaisesRegex(ValueError, 'sources changed'):
+                build(work=work, destination=served, install_precompiled=True)
+            self.assertEqual(served.read_bytes(), b'%PDF-original')
+
+    def test_precompiled_install_and_reuse_without_a_local_compiler(self):
+        archive = ROOT / 'archive'
+        archive.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=archive) as folder:
+            work = Path(folder) / 'work'
+            served = Path(folder) / 'new.pdf'
+            build(work=work, compile_pdf=False)
+            (work / 'cv-llt.pdf').write_bytes(b'%PDF-preview')
+            build(work=work, destination=served, install_precompiled=True)
+            with patch('build_cv.subprocess.run', side_effect=AssertionError('Unexpected compiler call')):
+                build(work=work, destination=served)
+            self.assertEqual(served.read_bytes(), b'%PDF-preview')
 
     def test_real_appointment_and_paper_are_not_duplicated(self):
         from build_cv import SECTIONS
