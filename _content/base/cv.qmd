@@ -1,6 +1,6 @@
 ---
 title: "Curriculum vitae"
-subtitle: "Academic record \u00b7 October 2026."
+subtitle: "Academic record · Rebuilt with each successful website publication."
 toc: false
 ---
 
@@ -17,5 +17,5 @@ toc: false
 - [Professional service and leadership](service.qmd)
 - [Invited talks, lectures, and tutorials](talks.qmd)
 
-Updated October 2026.
+The PDF combines the CV baseline with active structured website updates.
 
