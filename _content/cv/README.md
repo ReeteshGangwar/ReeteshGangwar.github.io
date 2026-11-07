@@ -14,7 +14,7 @@ repository so GitHub can build without access to the surrounding private vault.
 ## Status
 
 The generator is integrated into the website pre-render step. GitHub Actions
-installs Tectonic and compiles the PDF before rendering the website. Preview
+uses TeX Live 2025 and pdfLaTeX to compile the PDF before rendering the website. Preview
 builds on non-main branches do not deploy to GitHub Pages. A `CV-preview` artifact
 is retained after each successful build for review.
 
@@ -29,7 +29,9 @@ are website-only; appointments should use Service.
 Keep active records. Each build starts from this baseline, applies records once,
 and writes generated TeX under `archive/cv-build/`. Do not edit generated files.
 Matching titles, names or course codes replace existing CV records; ambiguous
-matches fail. Keep those identities stable when revising entries.
+matches fail. Keep those identities stable when revising entries. Entries inside
+the historical shared master's-student table require conversion to individual
+records first; the generator stops rather than replace that entire table.
 
 The historical publication selection (2024–2026) is preserved, with new records
 added. Old manually calculated aggregate project totals are suppressed when a
@@ -49,9 +51,12 @@ conda run -n research python -m unittest discover -s scripts -p 'test_*.py' -v
 conda run -n research python scripts/build_cv.py --sources-only
 ```
 
-Full builds require Tectonic 0.17.0 and access to its TeX support bundle. The
-proposed GitHub workflow installs it, then lets Quarto invoke the website and CV
-build. A CV build failure stops publication before the served PDF is replaced.
+Full local builds require `latexmk`, pdfLaTeX and the packages used by the
+preserved template. GitHub Actions supplies a complete TeX Live 2025 environment,
+compiles the prepared sources, and verifies the PDF matches the current sources
+before Quarto renders the website. The pre-render step reuses that verified PDF
+only when the source fingerprint matches. A CV failure stops publication before
+the served PDF is replaced.
 
 The current integration proposal is in
 [[AI_reetesh_work/03_Academic-Profile/Website/output/CV-Automation-Review|CV automation review]].
